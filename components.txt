@@ -1,0 +1,3 @@
+
+Power Manager ==> Xfce4 Power Manager
+study it more for useful information!

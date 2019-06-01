@@ -1,0 +1,4 @@
+super + r  = run commands
+super + e = open file system
+alt + f4 = close a program!!
+alt + space = system-level options for application

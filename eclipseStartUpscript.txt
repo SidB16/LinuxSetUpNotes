@@ -1,0 +1,10 @@
+#Step 1: Place the directory in which the binary is into the /opt dir
+#Step 2:Go to /usr/bin directory. The usr dir is for files that are not nessacry for bootup process. It is system wide.
+#Step 3: Create script in the /usr/bin dir
+
+Script involves creating an var and then using syscall exec 
+to execute.
+
+Example==>
+ECLIPSE=/opt/eclipse/eclipse
+exec $ECLIPSE "$@"
