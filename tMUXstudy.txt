@@ -5,6 +5,16 @@
 3) ctrl-B + "
 3) ctrl-O to switch between panes
 
+#Shared Session:
+Junior Dev Side: login on remote-sever-1
+1) tmux list-sessions
+2) tmux new-session -s <nameOfSession>
+
+Senior Dev Side: login in remote-server-1 too
+1) tmux list-sessions
+2) <should-see-Junior-dev-<nameOfSession>>
+3) tmux attach -t <nameOfSession> 
+
 Source: https://www.youtube.com/watch?v=BHhA_ZKjyxo
 
 # session management
