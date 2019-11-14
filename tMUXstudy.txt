@@ -1,5 +1,11 @@
 
-Source: https://www.youtube.com/watch?v=BHhA_ZKjyxo
+#In sequence:
+1) tmux
+2) ctrl-B + % 
+3) ctrl-B + "
+3) ctrl-O to switch between panes
+
+Source: https://www.youtube.com/watch?v=BHhA_ZKjyxo
 
 # session management
 tmux ls (or tmux list-sessions)
