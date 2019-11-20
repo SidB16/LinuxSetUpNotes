@@ -6,3 +6,8 @@ Type sudo apt-get install openssh-server
 Enable the ssh service by typing sudo systemctl enable ssh
 Start the ssh service by typing sudo systemctl start ssh
 Test it by login into the system using ssh user@server-name
+sudo ufw allow ssh
+sudo ufw enable
+sudo ufw status
+
+
