@@ -1,0 +1,8 @@
+
+Source: https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/
+
+Open terminal
+Type sudo apt-get install openssh-server
+Enable the ssh service by typing sudo systemctl enable ssh
+Start the ssh service by typing sudo systemctl start ssh
+Test it by login into the system using ssh user@server-name
