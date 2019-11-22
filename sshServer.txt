@@ -3,7 +3,7 @@
 ************************Running Applications from DT on Remote Host using Xterm*********************
 Source: https://kb.iu.edu/d/adhh
 
-Xterm is :heart:
+Xterm is <3
 
  ssh -X -f username@remote.host "command"
  
