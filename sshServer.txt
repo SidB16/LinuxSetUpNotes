@@ -5,12 +5,12 @@ Source: https://kb.iu.edu/d/adhh
 
 Xterm is <3
 
- ssh -X -f username@remote.host "command"
+ sudo ssh -X -f username@remote.host "command"
  
  Example:
- ssh -X -f username@red.cse.yorku.ca "estudio &"
+ sudo ssh -X -f username@red.cse.yorku.ca "estudio &"
  &&
- ssh -X -f username@red.cse.yorku.ca "quartus &"
+ sudo ssh -X -f username@red.cse.yorku.ca "quartus &"
  
  "When you use SSH to display the program, 
  it creates a dummy X server on the remote host that 
