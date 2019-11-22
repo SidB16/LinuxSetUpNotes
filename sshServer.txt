@@ -12,9 +12,15 @@ Xterm is <3
  &&
  ssh -X -f username@red.cse.yorku.ca "quartus &"
  
- "When you use SSH to display the program, it creates a dummy X server on the remote host that forwards the X11 data packets through a secure connection to your computer. The X server on your computer treats the program as if it is running locally."
+ "When you use SSH to display the program, 
+ it creates a dummy X server on the remote host that 
+ forwards the X11 data packets through a secure connection to your computer. 
+ The X server on your computer treats the program as if it is running locally."
 
-"Note: Pay attention to what version of SSH is installed on both your computer and the remote host. Servers that run version 1 of the SSH protocol cannot communicate with clients that can only use version 2. Likewise, many SSH version 2 servers will refuse clients communicating with version 1 of the protocol, due to security concerns."
+"Note: Pay attention to what version of SSH is installed on both your computer and the remote host. 
+Servers that run version 1 of the SSH protocol cannot communicate with clients that can only use version 2. 
+Likewise, many SSH version 2 servers will refuse clients communicating with version 1 of the protocol, 
+due to security concerns."
 ************************Running Applications from DT on Remote Host *********************
 
 
