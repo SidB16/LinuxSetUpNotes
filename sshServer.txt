@@ -1,4 +1,25 @@
 
+
+************************Running Applications from DT on Remote Host using Xterm*********************
+Source: https://kb.iu.edu/d/adhh
+
+Xterm is :heart:
+
+ ssh -X -f username@remote.host "command"
+ 
+ Example:
+ ssh -X -f username@red.cse.yorku.ca "estudio &"
+ &&
+ ssh -X -f username@red.cse.yorku.ca "quartus &"
+
+************************Running Applications from DT on Remote Host *********************
+
+
+
+
+
+
+************************Installing Ubuntu Server on DT*********************
 Source: https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/
 
 Open terminal
@@ -9,5 +30,7 @@ Test it by login into the system using ssh user@server-name
 sudo ufw allow ssh
 sudo ufw enable
 sudo ufw status
+
+************************Installing Ubuntu Server on DT*********************
 
 
