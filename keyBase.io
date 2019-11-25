@@ -1,5 +1,7 @@
 Source:https://keybase.io/docs/linux-user-guide#quickstart
 
+https://keybase.io/sid16
+
 # given keybase user "max"
 keybase encrypt max -m "this is a secret"
 echo "this is a secret" | keybase encrypt max
@@ -11,7 +13,7 @@ keybase decrypt -i some_secret.txt
 cat some_secret.txt.encrypted | keybase decrypt
 
 keybase sign -m "I hereby abdicate the throne"
-keybase sign -i foo.exe -b -o foo.exe.signed
+https://keybase.io/sid16keybase sign -i foo.exe -b -o foo.exe.signed
 
 
 keybase pgp encrypt chris -m "secret"            # encrypt
