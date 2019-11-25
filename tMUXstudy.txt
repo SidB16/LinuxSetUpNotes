@@ -1,8 +1,8 @@
 
 #In sequence:
 1) tmux
-2) ctrl-B + % 
-3) ctrl-B + "
+2) ctrl-b + % 
+3) ctrl-b + "
 3) ctrl-O to switch between panes
 
 #Shared Session:
@@ -48,8 +48,9 @@ Ctrl-b % (Split the window vertically)
 CTRL-b " (Split window horizontally)
 Ctrl-b o (Goto next pane)
 Ctrl-b q (Show pane numbers, when the numbers show up type the key to go to that pane)
-Ctrl-b { (Move the current pane left)
+Ctrl-b { (Move the current pane left) //Swap panes
 Ctrl-b } (Move the current pane right)
+Ctrl-space Change Screen Topology
 
 # Make a pane its own window
 Ctrl-b : "break-pane"
