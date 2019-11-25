@@ -1,0 +1,5 @@
+Source: https://stackoverflow.com/questions/6767518/what-is-the-difference-between-github-and-gist
+
+"GitHub is the entire site. 
+Gists are a particular service offered on that site, namely code snippets akin to pastebin.
+However, everything is driven by git revision control, so gists also have complete revision histories."
