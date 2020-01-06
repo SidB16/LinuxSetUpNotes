@@ -2,6 +2,26 @@ In-progress...
 
 Theory:
 (Resource:https://www.latex-tutorial.com/tutorials/first-document/)
+Includes my theory study on 
+1)  First Document
+2)  Sections
+3)  Packages
+4)  Math
+5)  Figures
+6)  Table of Contents
+7)  Bibtex
+8)  Footnotes
+9)  Tables
+10) Pgfplotstable
+11) Pgfplots
+12) Tikz
+13) Listings
+14) Circuitikz
+15) More Circuitiz
+16) Hyperlinks
+17) Lists
+
+
 1) First Document:
   \documentclass[12]{article}
   \begin{document}
@@ -41,10 +61,26 @@ Theory:
     
     \section*{Hello, World!}
     
-  \end{document
-  
+  \end{document}
+ 
+2)  Sections
+3)  Packages
+4)  Math
+5)  Figures
+6)  Table of Contents
+7)  Bibtex
+8)  Footnotes
+9)  Tables
+10) Pgfplotstable
+11) Pgfplots
+12) Tikz
+13) Listings
+14) Circuitikz
+15) More Circuitiz
+16) Hyperlinks
+17) Lists
 
-Resources:
+Other Resources:
 1) http://mally.stanford.edu/~sr/computing/latex-example.html
 2) https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation
 3) https://github.com/James-Yu/LaTeX-Workshop/wiki/Install#usagehttps://github.com/James-Yu/LaTeX-Workshop/wiki/Install#usage
