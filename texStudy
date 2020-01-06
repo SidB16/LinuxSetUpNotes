@@ -1,6 +1,5 @@
-Theory:
-(Resource:https://www.latex-tutorial.com/tutorials/first-document/)
-Includes my theory study on:
+Includes my theoretical study on:
+(Key Resource:https://www.latex-tutorial.com/tutorials/first-document/)
 1)  First Document
 2)  Sections
 3)  Packages
@@ -238,4 +237,4 @@ Important fix for this VScode extension:
 4) Enter "root magic" - this should find the command "latex-workshop.addtexroot" (full name: Insert %!TeX root magic command) and pick the command.
 5) A list of .tex files in the projects should open - start typing the name of your desired root file (main.tex) and press enter. This inserts a correctly formatted root-comment and removes incorrectly formatted/old root-comments (if if recognizes them)
 6)Save the file and compile.
-
+Source of thread for this^ fix:  https://github.com/James-Yu/LaTeX-Workshop/issues/776
