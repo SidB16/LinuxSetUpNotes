@@ -92,6 +92,17 @@ text after subparagraph
 Notes:
 a) The sections will have successive numbers and appear in the table of contents
 b) Paragraphs are not numbered and thus don't appear in the table of contents
+c) Document Sectioning
+"LATEX can organize, number, and index chapters and sections of document. 
+There are up to 7 levels of depth for defining sections depending on the document class:
+-1.	\part{part}
+0.	\chapter{chapter}
+1.	\section{section}
+2.	\subsection{subsection}
+3.	\subsubsection{subsubsection}
+4.	\paragraph{paragraph}
+5.	\subparagraph{subparagraph}
+6. \part and \chapter are only available in report and book document classes."
 
 3)  Packages
 Notes:
