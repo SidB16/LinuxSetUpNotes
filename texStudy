@@ -8,10 +8,10 @@ Theory:
     \section{Hello, World!}
   \end{document}
   Notes: 
-   An environment is simply an area of your document where certain
+   "An environment is simply an area of your document where certain
    typesetting rules apply. It is possible (and usually necessary) 
    to have multiple environments in a document, but it is imperative 
-   the document environment is the topmost environment.
+   the document environment is the topmost environment."
 % Valid:
 \begin{document}
   \being{env1}
@@ -24,6 +24,24 @@ Theory:
   \end{document}
 \end{env1}
 
+% Example Document Build
+  \documentclass{article}
+  
+  % "Preamble" - Title Page part
+  \title{My first doc}
+  \today
+  \author{sid16}
+  
+  % Document Part
+  \begin{document}
+    % 'document' enviroment type setting rules
+    \pagenumbering{roman}
+    \maketitle % "This command will automagically create a titlepage for us". Using the preamble above OFC
+    \new page
+    
+    \section*{Hello, World!}
+    
+  \end{document
   
 
 Resources:
