@@ -193,8 +193,51 @@ f) Scaling of Parentheses, Brackets etc:
 15) More Circuitiz
 16) Hyperlinks
 17) Lists
+% Simple Lists Implementation
+\documentclass{article}
+\title{Ordered List Examples}
+%\usepackage{}, no package needed!
+
+\begin{document}
+\newpage
+\pagenumbering{roman}
+
+\section{Simple Ordered List}
+% Shortcut? use 'enumerate' macro!
+\begin{enumerate}   
+    \item Item 1
+    \item Item 2
+    \item Item 3
+\end{enumerate}
+\section{Ordered Nested List}
+\begin{enumerate}
+        \item item 1
+        \item item 2
+        \item item 3 \begin{enumerate}
+            \item sub item 1
+            \item sub item 2
+        \end{enumerate}
+        \item item 4
+        \item item 5
+        
+    \end{enumerate}
+
+\end{document}
+Notes:
+a) "Unordered lists can be created using the itemize environment."
+b) "Ordered lists can be created using the enumerate environment."
+c) "Lists can be nested and will be aligned and enumerated properly."
+d) "Use the enumitem package to customize the symbols or enumeration."
 
 Other Resources:
 1) http://mally.stanford.edu/~sr/computing/latex-example.html
 2) https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation
 3) https://github.com/James-Yu/LaTeX-Workshop/wiki/Install#usagehttps://github.com/James-Yu/LaTeX-Workshop/wiki/Install#usage
+Important fix for this VScode extension:
+1) Open the project folder with VS Code (make sure, that your root file is in some subdirectory of this folder)
+2) Open the .tex file from which you want to compile the document
+3) Press F1 (or whatever hotkey you have assigned to the "Show All Commands"-command
+4) Enter "root magic" - this should find the command "latex-workshop.addtexroot" (full name: Insert %!TeX root magic command) and pick the command.
+5) A list of .tex files in the projects should open - start typing the name of your desired root file (main.tex) and press enter. This inserts a correctly formatted root-comment and removes incorrectly formatted/old root-comments (if if recognizes them)
+6)Save the file and compile.
+
