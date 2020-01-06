@@ -1,4 +1,31 @@
 In-progress...
+
+Theory:
+(Resource:https://www.latex-tutorial.com/tutorials/first-document/)
+1) First Document:
+  \documentclass[12]{article}
+  \begin{document}
+    \section{Hello, World!}
+  \end{document}
+  Notes: 
+   An environment is simply an area of your document where certain
+   typesetting rules apply. It is possible (and usually necessary) 
+   to have multiple environments in a document, but it is imperative 
+   the document environment is the topmost environment.
+% Valid:
+\begin{document}
+  \being{env1}
+  \end{env1}
+\end{document}
+
+% Invalid:
+\begin{document}
+  \being{env1}
+  \end{document}
+\end{env1}
+
+  
+
 Resources:
 1) http://mally.stanford.edu/~sr/computing/latex-example.html
 2) https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation
