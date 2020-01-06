@@ -2,7 +2,7 @@ In-progress...
 
 Theory:
 (Resource:https://www.latex-tutorial.com/tutorials/first-document/)
-Includes my theory study on 
+Includes my theory study on:
 1)  First Document
 2)  Sections
 3)  Packages
@@ -91,14 +91,96 @@ text on a new line
 text after subparagraph
 
 \end{document}
-    
+
+Notes:
+a) The sections will have successive numbers and appear in the table of contents
+b) Paragraphs are not numbered and thus don't appear in the table of contents
+
 3)  Packages
 Notes:
- a) In case of Ubuntu installing texlive-full 
+ a) "In case of Ubuntu installing texlive-full"
  from the package manager would provide all packages available. 
- b) 
+ b) "All packages must be included in the preamble"
+ c) "Packages add features such as support for pictures, links and bibliography"
+ 
 4)  Math
+There are two major modes of typesetting math in LaTeX 
+one is embedding the math directly into your text by encapsulating your formula in dollar signs 
+and the other is using a predefined math environment.
+Notes:
+a) use in preable section \usepackage{amsmath}
+b) Inline formulas: This formula $f(x) = x^2$ is an example.
+c) Equations:
+  C.1) most useful math envorinments are the equation environment for typesetting single equations
+        and the align environment for multiple equations
+        \documentclass{article}
+        \title{Equation Example}
+        
+        \begin{document}
+        
+        \section{Showing Equations}
+        
+        \subsection{#1- non-aligned example}
+        \being{equation*} % Note the '*' here
+          1 + 2 = 3
+        \end{equation*}
+        \being{equation*}
+          1 = 3 - 2
+        \end{equation*}
+        
+        \subsection{#2- Automatic Aligned math equation example}
+        \being{equation*} % Note how two environments were not needed!
+        1 + 2 &= 3\\ % '\\' is a line break!
+        1 &= 3 - 2
+        \end{equation*}
+        
+        \end{document}
+  C.2) Furthermore it is not even possible to enter two equations 
+       in that environment, it will result in a compilation error. 
+       The asterisk (e.g. equation*) only indicates, that I don't want 
+       the equations to be numbered.
+  C.3)  \int^a_b for integral symbol
+        \frac{u}{v} for fractions
+        \sqrt{x} for square roots
+        \left(\frac{1}{\sqrt{x}}\right) for (1/sqrt(x))
+  C.4) "The Lyx program offers a great formula editor, which can ease this work a bit."
+        "Personally, I write all code by hand though, since it's faster than messing around with the formula editor."
+d) Fractions:
+e) Matricies:
+f) Scaling of Parentheses, Brackets etc:
+
 5)  Figures
+  % Example of simple document inserted with caption!
+  
+  % Preamble
+  \documentclass{article}
+  \title{Figure Example}
+  \usegraphicx
+  
+  % Document Part
+  \begin{document}
+    begin{figure} % could use '*' so that images are unumbered
+    \includegraphics[width=\linewidth]{capture.jpg}
+    \caption{An image capture.}
+    \label{fig:boat1}
+  end{figure}
+  Figure \ref{fig:boat1} shows a boat.
+   
+  \end{document}
+  Notes:
+  a) "The figure environment takes care of the numbering and 
+     positioning of the image within the document."
+  b) "In order to include a figure, you must use the \includegraphics command. 
+     It takes the image width as an option in brackets and the path to your image file."
+  b) "In this case the image is stored in the same directory as 
+     my .tex file, so I simply put boat.jpg here to include it.
+     For large documents, you probably want to store image files 
+     in a different folder, say we created a folder images, then 
+     we would simply write images/boat.jpg into the braces."
+  c) \usepacakage{graphicx}
+  d) "You can use the \ref command to refer to the figure (marked by label) in your text 
+      and it will then be replaced by the correct number."
+     
 6)  Table of Contents
 7)  Bibtex
 8)  Footnotes
