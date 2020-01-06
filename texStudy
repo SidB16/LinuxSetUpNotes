@@ -28,7 +28,7 @@ Includes my theory study on
     \section{Hello, World!}
   \end{document}
   Notes: 
-   "An environment is simply an area of your document where certain
+   a) "An environment is simply an area of your document where certain
    typesetting rules apply. It is possible (and usually necessary) 
    to have multiple environments in a document, but it is imperative 
    the document environment is the topmost environment."
@@ -64,7 +64,39 @@ Includes my theory study on
   \end{document}
  
 2)  Sections
+    % Example of structuring a document- its "Easy" :)
+\documentclass{article}
+\title{Title}
+
+\begin{document}
+\maketitle
+\newpage
+\pagenumbering{roman}
+
+\section{Section1}
+\subsection{subsec1}
+Some text
+\subsubsection{subsubsec1}
+
+% within subsubsection
+\paragraph{Paragraph. 4)  Math
+5)  Figures
+6)  Table of Contents
+7)  Bibtex
+8)  Footnotes
+9)  Tables}
+text to immediate right of Paragraph text! \newline
+text on a new line
+\subparagraph{SubParagraph}
+text after subparagraph
+
+\end{document}
+    
 3)  Packages
+Notes:
+ a) In case of Ubuntu installing texlive-full 
+ from the package manager would provide all packages available. 
+ b) 
 4)  Math
 5)  Figures
 6)  Table of Contents
