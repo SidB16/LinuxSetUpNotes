@@ -2,9 +2,10 @@ Guide to Installing Rodin 3.3 Platform(with Pro-B Plugin already installed I bel
 
 In this document I share the labours of 10 straight hours work deciphering dry 1990s documentation...
 
-Long story short, you need jdk8 to run Rodin3.3 Platform. Any jdk > 8 will not work with Rodin 3.3
+Long story short, you need jdk8 to run Rodin3.3 Platform. Any jdk > 8 will not work with Rodin 3.3 Platform.
 
-Here are following steps I followed to successfully run Rodin3.3 on my linux machine:
+Here are following steps I followed to successfully run Rodin3.3 Platform on my Linux machine:
+
 1) Download the compressed (tar.gz, etc) Rodin3.3 Platform file from: https://sourceforge.net/projects/rodin-b-sharp/files/Core_Rodin_Platform/3.3/
 
 2) Once installed try to execute the rodin binary file in extracted directory (Note: this extracted dir is also called rodin. The rodin binary file is inside it.)
@@ -15,8 +16,8 @@ Here are following steps I followed to successfully run Rodin3.3 on my linux mac
 
 4) Dowload jdk8 from https://adoptopenjdk.net/ 
 
-5) Test the Rodin3.3 platform launches by executing the following command: " export PATH=~/Desktop/jdk8/jdk8u232-b09/bin:$PATH "
+5) Test the Rodin3.3 platform launches by executing the following command: export PATH=~/Desktop/jdk8/jdk8u232-b09/bin:$PATH
 
-5) If test is succesful then configure your shell $PATH to read the java bin from jdk8. (Tip: Insert at the head of the long $PATH string!) 
+5) If test is successful then configure your shell $PATH to read the java bin from jdk8. (Tip: Insert at the head of the long $PATH string!) 
 
 6) You're done :) 
