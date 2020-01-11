@@ -17,6 +17,7 @@ Here are following steps I followed to successfully run Rodin3.3 Platform on my 
 4) Dowload jdk8 from https://adoptopenjdk.net/ 
 
 5) Test the Rodin3.3 platform launches this time BUT execute the following command first to apply jdk8: export PATH=~/Desktop/jdk8/jdk8u232-b09/bin:$PATH
+(Note: the command above is $PATH relative to my machine- it most likely will be different for you.)
 
 5) If test is successful then configure your shell $PATH to read the java bin from jdk8. (Tip: Insert at the head of the long $PATH string!) 
 
