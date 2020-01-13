@@ -1,6 +1,7 @@
 Source: https://haydenjames.io/linux-networking-commands-scripts/
 Handy Review Docs: http://www.tcpipguide.com/free/t_toc.htm (&& 4482 repo, which is private :*()
 
+
 This list of Linux Networking commands and scripts:
 
 arpwatch – Ethernet Activity Monitor.
@@ -18,7 +19,7 @@ hping – TCP/IP packet assembler/analyzer.
 ibmonitor – shows bandwidth and total data transferred.
 ifstat –  report network interfaces bandwidth.
 iftop – display bandwidth usage.
-ip (PDF file) – a command with more features that ifconfig (net-tools).
+ip (PDF file) – a command with more features that ifconfig (net-tools).****************** eg: ip route. 
 iperf3 – network bandwidth measurement tool. (above screenshot Stacklinux VPS)
 iproute2 – collection of utilities for controlling TCP/IP.
 iptables – take control of network traffic.
