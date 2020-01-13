@@ -1,6 +1,16 @@
 Source: https://haydenjames.io/linux-networking-commands-scripts/
 Handy Review Docs: http://www.tcpipguide.com/free/t_toc.htm (&& 4482 repo, which is private :*()
 
+When or if you dont have net-utils installed, try the follwing:
+
+ip -r n s (To translate MACs to IPs you need to do ARP requests (ICMPv6 if you need
+IPv6 addresses.)
+
+Run "tcpdump -nvi any udp port 53 or tcp port 53 or udp port 5353".
+Run "ip -r m l eth0" alongside with it.
+Watch the result.
+
+
 
 This list of Linux Networking commands and scripts:
 
