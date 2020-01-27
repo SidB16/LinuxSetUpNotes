@@ -1,0 +1,6 @@
+Resource 1:
+https://www.codesdope.com/cpp-lets-start/
+
+Resource 2:
+The C++ Programming Language by Bjarne Stroustrup
+
