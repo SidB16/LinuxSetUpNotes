@@ -1,0 +1,6 @@
+
+Setting up a apache2 server to server webpages on web, on my linux instance. 
+
+1) sudo apt-get install apache2
+
+2)
