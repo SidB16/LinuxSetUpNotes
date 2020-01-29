@@ -10,6 +10,71 @@ Run "tcpdump -nvi any udp port 53 or tcp port 53 or udp port 5353".
 Run "ip -r m l eth0" alongside with it.
 Watch the result.
 
+sudo ifconfig enp0s3 198.168.0.190 (CHNAGE IP)
+sudo ifconfig enp0s3 198.168.0.190 netmask 255.255.255.0
+ip ==> ifconfig is in the process of being deprecated.&& displays peer adddresses and some more features than ifconfig
+sudo ip addr add 192.168.0.191/32 dev(name of device) enp0s3 (interface)
+ip a
+loopback
+arp
+iwconfig (for wireless interface)
+iwconfig wlan0 essid foobar
+iw (for WIRELESS interface, only suppoutrs netlink standard!)
+iw link
+iw scan ==> san for ssid
+iw connect "someSSID"
+iwlist
+iwlist eth1 scan ==> similar usign ifconfig
+sudo route del default gw 198.0.0.0
+sudo route add default gw 198.0.0.0
+ping google.com ==> destination unsreachble
+sudo ip route del defualt via 192.0.0.0
+sudo ip routa add default via 192.0.0.0
+sudo route add 192.0.0.0 reject ==> protect againt DoS attack
+sudo ifdown enp0s3 ==> bring (DHCP, in this case) interface down
+sudo ifup enp0s3 ==> bring IF up (but wait...)
+sudo ifconfig enp0s3 192.168.0.195 netmask 255.255.255.0 up (use to change IP)
+sudo ifdown  (will not work since we used Ifconfig to bring it up)
+sudo ifconfig enp0s3 down (to bring it down)
+sudo ifup enp0s3 (back to default address)
+which files or network connections are open via process ==> lsof -i (everything listening on a port)
+lsof will you show open files on the system
+ TRACEROUTE==> discoverall gatways along path between you and IP adress.!!
+ UDP probe packet wit small TTL counter and listens to time exceeded packet from GW, along path
+ *** ==> no reponse of GW bc didnt send repond bc packets sent by them had too SHORT TTLS!
+ 
+traceroute -n -q 1 ==> send one packet insetad of 1
+tcpdump ==> description of contents of packets going through our network interface. 
+sudo tcpdump <exp> <filter>
+sudo tdcpdump -i enp0s3 not port 22
+sudo tcpdump -i enp0s3 src 192.0.0.0
+sudo tcpdump -i enp0s3  dst 192.0.0.0
+nmap localhost ==> shows all open hosts
+nmap -a ==> more info && useful
+nmap -sP 198.192.9.9
+sudo ss ==> dumps sockets statistics
+ping ==> round bw you and another server
+ping6 ==> ipv6 ping
+nc ==> net cap==> tcp udp or unique sockets ==>  open close and scan ports. 
+nc ==> send files and images from one machine to another. CAN bind through any port!
+sudo apt-get install netcat-traditional.
+sudo update-altenatives --config nc
+netcat -zv localhost 1-100
+
+
+Files on Linux about networking:
+sudo cat /etc/nsswitch.conf ;where applications will get DNS record from 
+cat /etc/resolv.conf ==> dns resolver
+ls /etc/network
+dmsg
+dont forget NETWORK MANAGER.
+
+
+
+
+
+
+
 
 
 This list of Linux Networking commands and scripts:
