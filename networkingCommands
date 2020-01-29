@@ -1,8 +1,10 @@
 Source: https://haydenjames.io/linux-networking-commands-scripts/
 Handy Review Docs: http://www.tcpipguide.com/free/t_toc.htm (&& 4482 repo, which is private :*()
 
+
 When or if you dont have net-utils installed, try the follwing:
 
+*********************************************************************************
 ip -r n s (To translate MACs to IPs you need to do ARP requests (ICMPv6 if you need
 IPv6 addresses.)
 
@@ -10,6 +12,38 @@ Run "tcpdump -nvi any udp port 53 or tcp port 53 or udp port 5353".
 Run "ip -r m l eth0" alongside with it.
 Watch the result.
 
+*********************************************************************************
+curl https://wtfismyip.com/text
+*********************************************************************************
+Open souce VPN
+Implement Virtual Private Network 
+Point-to-Point
+Site-to-Site
+Custom security protcol- SSL/TLS for key exachange
+Can traverse NAT and firewalls
+Contains many security controls and features.
+
+Eg: Connection ec2 install on AWS
+Step1: from my machine (server)
+wget https://git.io/vpn -O openvnp.install.sh
+sudo bash openvpn-install.sh
+<configure options>
+Step2: Since aws server is NAT'ed we provide aws server's public address.
+cat client.ovpn ==> info about the setup vpn
+
+Step2: on client machine (past client.ovpn)
+install openvpn ==> sudo apt-get install openvpn  
+past config into file in client ==> vi client.ovpn
+<paste contents of server client.ovpn file>
+sudo openvpn --config client.ovpn ==> look for INITIAZATION SEQUENCE COMPLTTED
+
+put into bg and then ping google to test internetconnectivity
+test to check connect by testing server that you have clients IP==> curl https://wtfismyip.com/text
+should be aws server's public ip! 
+In essence, packets going over ubuntu aws client routed over NAT over internet to server, all over OPENvpn, all in 5 mins. 
+
+
+*********************************************************************************
 sudo ifconfig enp0s3 198.168.0.190 (CHNAGE IP)
 sudo ifconfig enp0s3 198.168.0.190 netmask 255.255.255.0
 ip ==> ifconfig is in the process of being deprecated.&& displays peer adddresses and some more features than ifconfig
