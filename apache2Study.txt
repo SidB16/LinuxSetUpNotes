@@ -3,4 +3,47 @@ Setting up a apache2 server to server webpages on web, on my linux instance.
 
 1) sudo apt-get install apache2
 
-2)
+2) sudo apt-get install libapache2-mod-php7.2
+2.5)vi /etc/apache2/mods-enabled/dir.conf ===> add index.php to list
+2.5.5) in index.php  ==> "<?php phpinfo(); ?>"
+
+3) refresh and volia!
+
+4) Client-User Authendication using ht.access
+4.1) sudo vi  /etc/apache2/apache2.conf
+4.2) on line 166. on colon enter 166
+4.3) AllowOverride All
+4.4) sudo service apache2 restart
+
+4.5) cd /var/www/html
+4.6) sudo vi .htaccess 
+4.7) 
+" AuthType Basic //unencyrpted
+  AuthName "Restricted Page" //group name
+  AuthBasicProvider file //using type file
+  AuthUserFile "/etc/apache2/passwords" //location of file
+  Require user sid
+"
+4.7) sudo htpasswd -c /etc/apache2/passwords sid
+**enter passwordd**
+4.8) cat /etc/apache2/passwords
+**encrypted password**
+
+4.9) sudo htpasswd /etc/apache2/password sid (no -c wil update the file)
+
+4.10)Tuning Apache2
+sudo vi /etc/apache2/mods-available/mpm_prefork.conf
+**List of options that allow you to tune server**
+Adjust things such as: no of server, min spare servers, max spare server, max no of servers that can be started, no of connections!
+
+4.11) Redirect using local url :)
+4.11.1) sudo vi /etc/apache2/sites-available/000-default.conf
+4.11.2) line 28, add new line 29 and write w/o "#" : "Redirect Permanent /google http://www.google.com
+
+4.12) sudo apache2ctl restart
+4.11.3) ip/google ==> should resolve to google.com
+
+4.13) tail /var/log/apache2/access.log
+**should see HTTP GET /google 301 request (for permanent url redirect)
+
+
