@@ -1,0 +1,3 @@
+Getting Started:
+1)https://community.nxp.com/community/mcuxpresso/mcuxpresso-sdk/blog/2019/04/20/tutorial-mcuxpresso-sdk-with-linux-part-2-commandline-debugging-with-gdb
+
