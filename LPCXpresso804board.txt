@@ -3,3 +3,8 @@ Getting Started:
 
 2) https://github.com/mbedmicro/pyOCD/blob/master/udev/README.md
 
+3)
+https://www.nxp.com/pages/lpc80x-series-introduction-part-iii-get-started-fast-with-this-comprehensive-enablement-offering-for-lpc800-mcus:TIP-LPC80X-COMPREHENSIVE-ENABLEMENT
+
+https://www.nxp.com/pages/part-ii-creative-ways-to-leverage-the-lpc804-mcus-integrated-programmable-logic-feature:TIP-LPC80X-LEVERAGE-PLU-PT2
+
