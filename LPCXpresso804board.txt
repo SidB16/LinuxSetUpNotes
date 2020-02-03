@@ -19,3 +19,10 @@ https://www.nxp.com/design/microcontrollers-developer-resources/lpcopen-librarie
 6) CMSIS-DAP Protocol
 CMSIS-DAP provides a standardized way to access the Coresight Debug Access Port (DAP) of an ARM Cortex microcontroller via USB.
 https://os.mbed.com/handbook/CMSIS-DAP
+
+Different types of commands can be issued by the host:
+General Commands: request information and control the debug unit. Also used to connect/disconnect the debug unit.
+Common SWD/JTAG commands: used for instance to set the clock speed
+SWD specific commands: configure the parameters for SWD mode
+JTAG specific commands: configure the JTAG device chain
+Transfer Commands: read/write CoreSight registers. These commands are independent of the transport (SWD or JTAG)
