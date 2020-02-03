@@ -14,3 +14,8 @@ https://community.nxp.com/docs/DOC-343497
 
 5) LPC Open Library
 https://www.nxp.com/design/microcontrollers-developer-resources/lpcopen-libraries-and-examples:LPC-OPEN-LIBRARIES?&tid=vanLPCOPEN
+
+
+6) CMSIS-DAP Protocol
+CMSIS-DAP provides a standardized way to access the Coresight Debug Access Port (DAP) of an ARM Cortex microcontroller via USB.
+https://os.mbed.com/handbook/CMSIS-DAP
