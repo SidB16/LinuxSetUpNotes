@@ -11,3 +11,6 @@ https://www.nxp.com/pages/part-ii-creative-ways-to-leverage-the-lpc804-mcus-inte
 
 4) Community Docs
 https://community.nxp.com/docs/DOC-343497
+
+5) LPC Open Library
+https://www.nxp.com/design/microcontrollers-developer-resources/lpcopen-libraries-and-examples:LPC-OPEN-LIBRARIES?&tid=vanLPCOPEN
