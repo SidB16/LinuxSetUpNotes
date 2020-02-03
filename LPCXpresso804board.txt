@@ -1,10 +1,13 @@
 Getting Started:
 1)https://community.nxp.com/community/mcuxpresso/mcuxpresso-sdk/blog/2019/04/20/tutorial-mcuxpresso-sdk-with-linux-part-2-commandline-debugging-with-gdb
 
-2) https://github.com/mbedmicro/pyOCD/blob/master/udev/README.md
+2) 
+https://github.com/mbedmicro/pyOCD/blob/master/udev/README.md
 
-3)
+3) Webinars
 https://www.nxp.com/pages/lpc80x-series-introduction-part-iii-get-started-fast-with-this-comprehensive-enablement-offering-for-lpc800-mcus:TIP-LPC80X-COMPREHENSIVE-ENABLEMENT
 
 https://www.nxp.com/pages/part-ii-creative-ways-to-leverage-the-lpc804-mcus-integrated-programmable-logic-feature:TIP-LPC80X-LEVERAGE-PLU-PT2
 
+4) Community Docs
+https://community.nxp.com/docs/DOC-343497
