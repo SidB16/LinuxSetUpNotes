@@ -50,3 +50,13 @@ If you need a smaller application size and don’t need the additional functiona
 7.1) Library Variants:
 Each C library family is provided in a number of different variants : None, Nohost and Nohost-nf, Semihost and Semihost-nf (Redlib only). These variants each provide a different set of ‘stubs’ that form the very bottom of the C library and include certain low-level functions used by other functions in the library
 
+
+7.2) What is Semihosting?
+Semihosting is a term to describe application IO via the debug probe. For this to operate, library code and debug support are required.
+
+Traditionally, this might be done by piping the messages over a serial cable connected to a Terminal program running on your PC. MCUXpresso IDE offers an alternative to this scheme, called semihosting. Semihosting provides a mechanism for code running on the target board to use the facilities of the PC running the IDE. The most common example of this is for the strings passed to a printf being displayed in the IDE’s console view.
+
+7.3) Important Notes Regarding Semi Hosting 
+Semihosting operations cause the CPU to drop into “debug state”, which means that for the duration of the data transfer between the target and the host PC no code (including interrupts) will get executed on the target. Thus if your application uses interrupts, then it is normally advisable to avoid the use of semihosting whilst interrupts are active – and certainly within interrupt handlers themselves. If you still need to use printf, then you can retarget the bottom level of the C library to use an alternative communication channel, such as a UART or the Cortex-M CPU’s ITM channel.
+
+
