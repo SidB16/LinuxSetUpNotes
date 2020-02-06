@@ -30,3 +30,19 @@ Common SWD/JTAG commands: used for instance to set the clock speed
 SWD specific commands: configure the parameters for SWD mode
 JTAG specific commands: configure the JTAG device chain
 Transfer Commands: read/write CoreSight registers. These commands are independent of the transport (SWD or JTAG)
+
+
+7) C/C++ Library Suppourt in MCUXpresso IDE
+Redlib Our own (non-GNU) ISO C90 standard C library, with some C99 extensions.
+
+Newlib GNU C/C++ library
+
+NewlibNano a version of the GNU C/C++ library optimized for embedded.
+
+By default, MCUXpresso IDE will use Redlib for C projects, NewlibNano for SDK C++ projects, and Newlib for C++ projects for preinstalled MCUs.
+
+Newlib provides complete C99 and C++ library support at the expense of a larger (in some cases, much larger) code size in your application.
+
+NewlibNano was produced as part of ARM’s “GNU Tools for ARM Embedded Processors” initiative in order to provide a version of Newlib focused on code size. Using NewlibNano can help dramatically reduce the size of your application compared to using the standard version of Newlib – for both C and C++ projects.
+
+If you need a smaller application size and don’t need the additional functionality of the C99 or C++ libraries, we recommend the use of Redlib, which can often produce much smaller applications.
