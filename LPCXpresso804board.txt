@@ -59,4 +59,64 @@ Traditionally, this might be done by piping the messages over a serial cable con
 7.3) Important Notes Regarding Semi Hosting 
 Semihosting operations cause the CPU to drop into “debug state”, which means that for the duration of the data transfer between the target and the host PC no code (including interrupts) will get executed on the target. Thus if your application uses interrupts, then it is normally advisable to avoid the use of semihosting whilst interrupts are active – and certainly within interrupt handlers themselves. If you still need to use printf, then you can retarget the bottom level of the C library to use an alternative communication channel, such as a UART or the Cortex-M CPU’s ITM channel.
 
+7.4) Switching the selected C library
+
+Normally the library variant used by a project is set up when the project is first created by the New Project Wizard. However it is quite simple to switch the selected C library between Redlib, Newlib and NewlibNano, as well as switching the library variant in use.
+
+To switch, highlight the project in the Project Explorer view and go to:
+
+Quickstart -> Quick Settings -> Set library/header type
+
+and select the required library and variant.
+
+Manually Switching
+
+Alternatively, you can make the required changes to your project properties manually as follows...
+
+When switching between Newlib(Nano) and Redlib libraries you must also switch the headers (since the 2 libraries use different header files). To do this:
+
+Select the project in Project Explorer
+
+Right-click and select Properties
+
+Expand C/C++ Build and select Settings
+
+In the Tools settings tab, select Miscellaneous under MCU C Compiler. Note: Redlib is not available for C++ projects
+
+In Library headers, select Newlib or Redlib
+
+In the Tools setting tab, select Architecture & Headers under MCU Assembler
+
+In Library headers, select Newlib or Redlib
+
+Repeat the above sequence for all Build Configurations (typically Debug and Release).
+
+To then change the libraries actually being linked with (assuming you are using Managed linker scripts):
+
+Select the project in Project Explorer
+
+Right-click and select Properties
+
+Expand C/C++ Build and select Settings
+
+In the Tools settings tab, select Managed Linker Script under MCU Linker
+
+In the Library drop-down, select the Newlib, NewlibNano or Redlib library variant that you require (None, Nohost, Semihost, Semihost-nf).
+
+Again repeat the above sequence for all Build Configurations (typically Debug and Release). Note: Redlib is not available for C++ projects.
+
+
+7.5)
+The MCUXpresso Config Tools set is a suite of evaluation and configuration tools that help you from initial evaluation to production software development. Following tools are included:
+
+Pins Tool- Enables you to configure the pins of a device. Pins tool enables you to create, inspect, change, and modify any aspect of the pin configuration and muxing of the device.
+
+Clocks Tool- Enables you to configure initialization of the system clock (core, system, bus, and peripheral clocks) and generates the C code with clock initialization functions and configuration structures.
+
+Peripherals Tool- Enable you to configure the intilization for the MCUXpresso SDK drivers.
+
+Device Configuration- Enables you to generate a Device Configuration Data (DCD) image using the format and constrains specified in the Boot ROM reference manual.
+
+TEE Tool- Enables you to configure security policies of memory areas, bus masters, and peripherals, in order to isolate and safeguard sensitive areas of your application.
+
 
