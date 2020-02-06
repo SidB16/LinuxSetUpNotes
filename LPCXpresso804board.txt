@@ -46,3 +46,7 @@ Newlib provides complete C99 and C++ library support at the expense of a larger 
 NewlibNano was produced as part of ARM’s “GNU Tools for ARM Embedded Processors” initiative in order to provide a version of Newlib focused on code size. Using NewlibNano can help dramatically reduce the size of your application compared to using the standard version of Newlib – for both C and C++ projects.
 
 If you need a smaller application size and don’t need the additional functionality of the C99 or C++ libraries, we recommend the use of Redlib, which can often produce much smaller applications.
+
+7.1) Library Variants:
+Each C library family is provided in a number of different variants : None, Nohost and Nohost-nf, Semihost and Semihost-nf (Redlib only). These variants each provide a different set of ‘stubs’ that form the very bottom of the C library and include certain low-level functions used by other functions in the library
+
