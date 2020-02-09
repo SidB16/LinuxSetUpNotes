@@ -1,0 +1,13 @@
+
+Why is this concept important?
+In my opinon, Bit Manipulation is important beacuse it's cricital in solving problems involving.
+1) IPv4: (Source:) https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html#anc5
+2) Setting & Clearing bit in cpu register.
+
+Theory Study:
+1) Bit facts
+2) 2's Complement and Negative Numbers
+3) Arithmetic and Logical Shifts 
+4) Setting and Clearning bits
+
+
