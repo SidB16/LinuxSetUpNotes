@@ -122,4 +122,10 @@ Device Configuration- Enables you to generate a Device Configuration Data (DCD) 
 
 TEE Tool- Enables you to configure security policies of memory areas, bus masters, and peripherals, in order to isolate and safeguard sensitive areas of your application.
 
+8) AHB peripherals vs APB peripherals
+Source: http://www.differencebetween.net/technology/difference-between-ahb-and-apb/
+When talking of the difference between the two, the AHB uses a full duplex parallel communication whereas the APB uses massive memory-I/O accesses.
+
+Both the AHB and the APB are on chip Bus standards. The Advanced High-performance Bus is capable of waits, errors and bursts. The ADH, which is pipelined, mainly connects to memories.
+
 
