@@ -1,4 +1,7 @@
 Getting Started:
+0) God Resource: https://www.bogotobogo.com/Embedded/memory_mapped_io_vs_port_mapped_isolated_io.php
+
+
 MCUXpresso & Linux
 1)https://community.nxp.com/community/mcuxpresso/mcuxpresso-sdk/blog/2019/04/20/tutorial-mcuxpresso-sdk-with-linux-part-2-commandline-debugging-with-gdb
 
