@@ -1,0 +1,58 @@
+https://cs.lmu.edu/~ray/classes/it/exam/final-exam/preparation/
+
+Self Check
+Make sure you have successfully met the course learning objectives, by being able to do each of the following:
+
+Explain the difference between a network and an internet
+Explain what a protocol is
+Explain the purpose of each of the four layers and how they interface with each other
+Explain the functionality and major protocols of the link layer
+Explain the functionality and major protocols of the network layer
+Explain the functionality and major protocols of the transport layer
+Explain the functionality and major protocols of the application layer
+Describe the awesomeness of the Internet’s design and why it works so well
+Talk about the early days of the Internet and how it came to be
+Describe the edge and core of the Internet
+Use ping, traceroute, ip (or ifconfig), nslookup, netstat, and nc, and know what they do
+Describe what a socket is and recite the basic operations of the low level socket API
+Explain how client-server apps differ from P2P apps
+Write TCP-based client-server applications in Java, Python, and JavaScript
+Explain threaded vs. evented servers and the advantages and disadvantages of each
+Describe HTTP request methods GET, PUT, POST, PATCH, DELETE, HEAD, OPTIONS
+Describe HTTP response codes 200, 201, 202, 204, 304, 400-406, 500-503
+Describe the format of HTTP requests and responses
+Write a simple web server in Express
+Access HTTP servers with nc, curl, and programmatically
+Explain the limitations of HTTP and why WebSockets were created
+Write a program with WebSockets
+Describe basic characteristics of wire, fiber, radio, microwave, and satellites, and approximate speeds of different media
+Explain the difference between packet switching and circuit switching
+Explain how packets can be delayed
+Explain the basic ideas behind Ethernet in particular and link layer technologies in general
+Describe the main parts of an Ethernet frame
+Explain the major features of IP
+Work with CIDR notation in IPv4 and IPv6, e.g. find address range for CIDR block
+Simplify or expand IPv6 addresses
+Explain the important differences between IPv4 and IPv6
+Know what loopback, anycast, and broadcast addresses are
+Know how IP routing tables work and why netmasks are so awesome
+Explain how ARP works and why it (or something like it) is needed
+Explain the important differences between UDP and TCP
+Describe the important fields of a TCP segment
+Explain the TCP handshake for establishing a connection
+Explain the TCP handshake for closing a connection
+Explain TCP windowing
+Explain how NAT works and why it (or something like it) is needed for IPv4
+Explain the major dimensions of the study of security
+Explain a few things attackers can do
+Explain the main players in a traditional cryptosystem
+Explain why cryptography must be key-based on not rely on algorithm secrecy
+Explain the (many!) differences between secret key and public key cryptography
+Describe Diffie-Helmann key exchange
+Describe how RSA works (mathematically)
+Explain both hashing and digital signatures, and how they differ
+Use Java, Python, and JavaScript libraries to encrypt and decrypt data streams
+Explain buffer overflow, injection, XSS, and CSRF attacks
+Talk about the password storage (what could go wrong) and token authentication
+Describe what cloud computing is and recite several advantages
+Use IAM, S3, EC2, and Lambda in the AWS Console and from the AWS CLI
