@@ -1,4 +1,12 @@
 https://cs.lmu.edu/~ray/classes/it/exam/final-exam/preparation/
+Papers and articles:
+Hobbes’ Internet Timeline
+Cerf and Kahn Paper
+RFCs: 1925, 2119, 3339, 2151, 791, 3631
+Docs: Node.js net, NPM ws, W3C WebSockets, Socket.io
+OWASP Top Ten 2017
+AWS Overview Whitepaper
+
 
 Self Check
 Make sure you have successfully met the course learning objectives, by being able to do each of the following:
