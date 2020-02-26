@@ -6,7 +6,8 @@ In essence, 00000000000000000000 = 20 bits (PIO_0-PIO_5 and PIO_7-PIO_21 from Ma
 So, if I want to DIRSET GPIO 11 i.e. blue led then I have to pass:
 (index starts at 0 :P) 00000000100000000000 --> 100000000000 --> 0x0800
 
-
+Pin 13: 10000000000000 = 0x2000
+Pin 12: 1000000000000 = 0x1000
 
 Getting Started:
 0) God Resource: https://www.bogotobogo.com/Embedded/memory_mapped_io_vs_port_mapped_isolated_io.php
