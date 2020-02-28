@@ -1,0 +1,3 @@
+
+Dealing with giving non-root user permission to run applications:
+sudo usermod -aG docker your-user
