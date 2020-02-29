@@ -1,3 +1,42 @@
 
 Dealing with giving non-root user permission to run applications:
 sudo usermod -aG docker your-user
+
+Manage users, groups, accounts and related system files.
+1)Passwords:
+/etc/psswd file
+/etc/shadow file
+/etc/group file
+/etc/skel file
+
+
+2)
+sudo adduser sid
+cat /etc/psswd to check & see if edits on skel worked.
+
+sudo addgroup SA
+cat /etc/group
+
+sudo adduser sid SA
+
+sudo userdel --force --remove sid (delete home dir for this user and anything else.)
+3)
+chag command for password expiry
+getent command- like grep!
+
+4)
+'getent services'- which ports are used by which services on system.--> COOL :)
+
+Localization and Internationalization
+5) 
+date command
+cat /etc/timezone
+
+tzselect - view/select another timezone.
+
+timedatelctl command- configure time and timezn and NTP (network based time syncronization)
+
+locale command
+
+iconv -l command-  convert between different encoding!
+
