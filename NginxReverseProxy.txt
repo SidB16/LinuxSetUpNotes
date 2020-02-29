@@ -1,0 +1,10 @@
+High Level Architecture:
+Client --> webrequest --> {ReverseProxy --> Actual WebServer}
+
+Why use reverse proxy?
+-Hide servers
+-Congiure a application firewall on reverse proxy, to protect against web-based attacks
+-Offload SSL certificates on proxy instead of the webserver
+-Use reverse proxy to distribute load to mulitple other servers
+-Use it to cache content and improve webrequest speed
+-etc.
