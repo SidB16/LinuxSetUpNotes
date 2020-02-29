@@ -47,3 +47,5 @@ cat /etc/hosts
 cat /etc/nsswitch.conf - how your sytem is going to look up networking related information and in what order.
 
 More general, to view system information- hostnamectl command
+
+ss -p --> tools related to sockets. Here its showing processes using sockets!
