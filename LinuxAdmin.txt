@@ -40,3 +40,8 @@ locale command
 
 iconv -l command-  convert between different encoding!
 
+Basic Networking Commands
+6)
+cat /etc/hostname
+cat /etc/hosts
+cat /etc/nsswitch.conf - how your sytem is going to look up networking related information and in what order.
