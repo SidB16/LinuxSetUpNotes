@@ -1,7 +1,18 @@
 Source: https://haydenjames.io/linux-networking-commands-scripts/
 Handy Review Docs: http://www.tcpipguide.com/free/t_toc.htm (&& 4482 repo, which is private :*()
 
+*********************************************************************************
+Read and Write traffic over a network using netcat
+netcat -l 1234 (in listen mode, remeber any port under 1024 are privilaged!)
 
+Open terminal on another linux machine, then type"
+net IP.of.listening.machine 1234
+
+Once connection is established, text can sent from one terminal to another.
+Used to text connectivity b/w systems- create TCP and UDP connections and investigate them. 
+Especially useful in scripts dealing with TCP or UDP sockets, and can be used to send files over a network.  
+
+*********************************************************************************
 When or if you dont have net-utils installed, try the follwing:
 
 *********************************************************************************
