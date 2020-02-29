@@ -2,6 +2,10 @@ Source: https://haydenjames.io/linux-networking-commands-scripts/
 Handy Review Docs: http://www.tcpipguide.com/free/t_toc.htm (&& 4482 repo, which is private :*()
 
 *********************************************************************************
+getent servies --> to see ports/services being used on system
+*********************************************************************************
+
+*********************************************************************************
 Read and Write traffic over a network using netcat
 netcat -l 1234 (in listen mode, remeber any port under 1024 are privilaged!)
 
