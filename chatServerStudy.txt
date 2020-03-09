@@ -1,2 +1,4 @@
 Resource: 
 https://rosettacode.org/wiki/Chat_server#Java
+
+https://chousensha.github.io/blog/2017/02/25/setting-up-mysql-and-php-on-apache/
