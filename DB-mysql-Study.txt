@@ -1,0 +1,21 @@
+https://www.inmotionhosting.com/support/website/how-to-create-a-database-using-mysql-from-the-command-line/
+
+Prerequisites:
+sudo apt-get update
+sudo apt-get install python-pip python-dev mysql-server libmysqlclient-dev
+
+1) Login as root.
+sudo mysql -u root -p 
+
+2) Once mysql cli is active,
+
+CREATE DATABASE mydatabase;
+CREATE USER 'sid16'@'localhost' IDENTIFIED BY 'p';
+GRANT ALL PRIVILEGES ON mydatabase.* TO 'sid16'@'localhost';
+FLUSH PRIVILEGES;
+
+3) Test
+show grants for 'sid16'@'localhost';
+
+4) Exit mysql cli through "\q"
+
