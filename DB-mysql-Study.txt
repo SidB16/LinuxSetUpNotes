@@ -1,9 +1,15 @@
+Project: Setup a Django Project with a MySQL database.
+
+Resrouces:
+https://www.leeboonstra.com/Django/setup-a-django-project-with-a-mysql-database/?fbclid=IwAR1vSS-dcJTDlzV6lUjBjWwZ1eQE8parxwI0zrpTfR3kgDzWQnnJSnoHpgk
+
 https://www.inmotionhosting.com/support/website/how-to-create-a-database-using-mysql-from-the-command-line/
 
-Prerequisites:
+A)Prerequisites:
 sudo apt-get update
 sudo apt-get install python-pip python-dev mysql-server libmysqlclient-dev
 
+B)
 1) Login as root.
 sudo mysql -u root -p 
 
@@ -19,3 +25,32 @@ show grants for 'sid16'@'localhost';
 
 4) Exit mysql cli through "\q"
 
+C)
+virtualenv myproject
+pip install django mysqlclient (FOR the virtual environment created)
+source myproject/bin/activate
+django-admin startproject mysite
+
+Configure Databse setting in mysites/mysites/setting.py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'myproject',
+        'USER': 'myprojectuser',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+
+python manage.py makemigrations 
+python manage.py migrate
+
+python manage.py createsuperuser
+
+python manage.py runserver 0.0.0.0:8000
+
+Append /admin to the end of the URL and you should be able to access the login screen to the admin interface.
+
+
+(Resource for last 3 lines: https://www.digitalocean.com/community/tutorials/how-to-use-mysql-or-mariadb-with-your-django-application-on-ubuntu-14-04)
