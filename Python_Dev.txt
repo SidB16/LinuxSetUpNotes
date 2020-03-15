@@ -1,1 +1,6 @@
 
+Refer to DB_study file to see usage of Python virtual env to deploy a chatsever with mysql database :P.
+
+Understandng Pipenv.
+https://realpython.com/pipenv-guide/
+
