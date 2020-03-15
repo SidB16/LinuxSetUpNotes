@@ -1,6 +1,47 @@
 
 Refer to DB_study file to see usage of Python virtual env to deploy a chatsever with mysql database :P.
+A virtual environment that has its own Python executable and third-party package storage. 
+ProjectA and ProjectB can be adequately separated.
+Switch between projects since they’re not sharing the same package storage location. 
+PackageA can have whatever version of django it needs in its own environment, and 
+PackageB can have what it needs totally separate. 
+Virtualenv (or venv in Python 3) is common tool.
+Note: Pipenv has virtual environment management built in so that you have a single tool for your package management
+
 
 Understandng Pipenv.
 https://realpython.com/pipenv-guide/
+
+A) Dependency Management with requirements.txt
+pip install -r requirements.txt will install the latest version by default. 
+
+B) To replicate the exact environment you have on your development machine in production.
+Use pip freeze. Get exact versions for all 3rd party libraries currently installed, including the sub-dependencies pip installed automatically. Freeze everything in development to ensure that you have the same environment in production.
+eg: requirements.txt:
+click==6.7
+Flask==0.12.1
+itsdangerous==0.24
+Jinja2==2.10
+MarkupSafe==1.0
+Werkzeug==0.14.1
+
+C) “How do you allow for deterministic builds for your Python project without gaining the responsibility of updating versions of sub-dependencies?”
+Answer: Pipenv
+
+D) Demonstration of use case of pipenv- a effecient tools for a python dev.
+pip install pipenv
+
+pipenv shell
+
+pipenv install flask==0.12.1
+
+pipenv install numpy
+
+pipenv install -e git+https://github.com/requests/requests.git#egg=requests
+
+pipenv install pytest --dev
+
+pipenv lock --- locking testing env b/c you're production ready.
+
+
 
