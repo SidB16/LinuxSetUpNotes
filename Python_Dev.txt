@@ -1,3 +1,4 @@
+Tip: use pip3 as pip has reached end-of-life.
 
 Refer to DB_study file to see usage of Python virtual env to deploy a chatsever with mysql database :P.
 A virtual environment that has its own Python executable and third-party package storage. 
