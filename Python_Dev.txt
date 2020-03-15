@@ -43,5 +43,6 @@ pipenv install pytest --dev
 
 pipenv lock --- locking testing env b/c you're production ready.
 
+useful command: pipenv graph (show a dependency graph to understand your top-level dependencies and their sub-dependencies)
 
 
