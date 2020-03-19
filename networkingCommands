@@ -1,6 +1,6 @@
 Source: https://haydenjames.io/linux-networking-commands-scripts/
 Handy Review Docs: http://www.tcpipguide.com/free/t_toc.htm (&& 4482 repo, which is private :*()
-remember to use Statistics > Flow graph, in wireshark!
+(Remember to use Statistics > Flow graph, then select flow type in wireshark!)
 *********************************************************************************
 getent servies --> to see ports/services being used on system
 In my opinion, grep is still more powerful :P.
