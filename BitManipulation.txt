@@ -11,8 +11,16 @@ Theory Study:
 4) Setting and Clearning bits
 
 Important fact to remeber:
-Flash memory uses floating gate transistors to store data, rather than the magnetic method used by hard disks. The presence of a magnetic field is not necessarily a problem for an SSD, but the rate of change of magnetic flux could cause damage:
+Flash memory uses floating gate transistors to store data, rather than the magnetic method used by hard disks. 
+The presence of a magnetic field is not necessarily a problem for an SSD, but the rate of change of magnetic flux could cause damage:
 
-CFs [Compact Flash drives] aren't magnetic media, so they can't be erased like, say, a floppy disk or a hard drive. However, depending on the strength of the magnetic field, a CF isn't completely safe. For instance, if you were to do an MRI of your CF (or any other piece of sensitive electronic circuitry, for that matter), it would be toast. It's not simply the strength of the magnetic field that matters, so much as the rate at which the field changes. If you go from strong field to no field very quickly or vice versa, then the change in magnetic flux can generate small voltages over wires, traces, etc. If the voltages are high enough, then they can cause damage. I don't know, practically, in the real world, what sources of magnetic fields might pose a danger to a CF -- or a camera -- or a lens. (source:https://superuser.com/questions/338641/is-it-possible-to-wipe-ssd-with-strong-magnetic-force)
+CFs [Compact Flash drives] aren't magnetic media, so they can't be erased like, say, a floppy disk or a hard drive.
+However, depending on the strength of the magnetic field, a CF isn't completely safe. 
+For instance, if you were to do an MRI of your CF (or any other piece of sensitive electronic circuitry, for that matter), it would be toast. 
+It's not simply the strength of the magnetic field that matters, so much as the rate at which the field changes. 
+If you go from strong field to no field very quickly or vice versa, then the change in magnetic flux can generate small voltages over wires, traces, etc. 
+If the voltages are high enough, then they can cause damage. 
+I don't know, practically, in the real world, what sources of magnetic fields might pose a danger to a CF -- or a camera -- or a lens. 
+(source:https://superuser.com/questions/338641/is-it-possible-to-wipe-ssd-with-strong-magnetic-force)
 
 
