@@ -10,6 +10,7 @@ Theory Study:
 3) Arithmetic and Logical Shifts 
 4) Setting and Clearning bits
 
+**************************************************************************************************************
 Important fact to remeber:
 Flash memory uses floating gate transistors to store data, rather than the magnetic method used by hard disks. 
 The presence of a magnetic field is not necessarily a problem for an SSD, but the rate of change of magnetic flux could cause damage:
@@ -22,5 +23,5 @@ If you go from strong field to no field very quickly or vice versa, then the cha
 If the voltages are high enough, then they can cause damage. 
 I don't know, practically, in the real world, what sources of magnetic fields might pose a danger to a CF -- or a camera -- or a lens. 
 (source:https://superuser.com/questions/338641/is-it-possible-to-wipe-ssd-with-strong-magnetic-force)
-
+**************************************************************************************************************
 
