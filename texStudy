@@ -246,6 +246,9 @@ Important fix for this VScode extension:
 2) Open the .tex file from which you want to compile the document
 3) Press F1 (or whatever hotkey you have assigned to the "Show All Commands"-command
 4) Enter "root magic" - this should find the command "latex-workshop.addtexroot" (full name: Insert %!TeX root magic command) and pick the command.
-5) A list of .tex files in the projects should open - start typing the name of your desired root file (main.tex) and press enter. This inserts a correctly formatted root-comment and removes incorrectly formatted/old root-comments (if if recognizes them)
+5) A list of .tex files in the projects should open - start typing the name of your desired root filATH="/usr/local/texlive/2019/bin/x86_64-linux/:e (main.tex) and press enter. This inserts a correctly formatted root-comment and removes incorrectly formatted/old root-comments (if if recognizes them)
 6)Save the file and compile.
 Source of thread for this^ fix:  https://github.com/James-Yu/LaTeX-Workshop/issues/776
+
+Also, you need to install texLive package from offical website and update your $PATH to include /usr/local/texlive/2019/bin/x86_64-linux/.
+This path to texLive binaries which VScode will use to spawn processes and build pdf.
