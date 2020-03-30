@@ -1,7 +1,5 @@
 Guide to Installing Rodin 3.3 Platform(with Pro-B Plugin already installed I believe) on Linux.
 
-In this document I share the labours of 10 straight hours work deciphering dry 1990s documentation...
-
 Long story short, you need jdk8 to run Rodin3.3 Platform. Any jdk > 8 will not work with Rodin 3.3 Platform.
 
 Here are following steps I followed to successfully run Rodin3.3 Platform on my Linux machine:
