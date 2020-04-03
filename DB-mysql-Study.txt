@@ -1,6 +1,9 @@
 Project: Setup a Django Project with a MySQL database.
 
 Resrouces:
+For a proper installation guide see:
+https://drive.google.com/file/d/1S4vn8A0G7GxUSduDXQp9WGB5p3Nu9BDV/view?usp=sharing
+
 https://www.leeboonstra.com/Django/setup-a-django-project-with-a-mysql-database/?fbclid=IwAR1vSS-dcJTDlzV6lUjBjWwZ1eQE8parxwI0zrpTfR3kgDzWQnnJSnoHpgk
 
 https://www.inmotionhosting.com/support/website/how-to-create-a-database-using-mysql-from-the-command-line/
@@ -54,6 +57,5 @@ python manage.py createsuperuser
 python manage.py runserver 0.0.0.0:8000
 
 Append /admin to the end of the URL and you should be able to access the login screen to the admin interface.
-
 
 (Resource for last 3 lines: https://www.digitalocean.com/community/tutorials/how-to-use-mysql-or-mariadb-with-your-django-application-on-ubuntu-14-04)
