@@ -7,7 +7,9 @@ https://www.inmotionhosting.com/support/website/how-to-create-a-database-using-m
 
 A)Prerequisites:
 sudo apt-get update
-sudo apt-get install python-pip python-dev mysql-server libmysqlclient-dev
+sudo apt-get install python3-pip python3-dev mysql-server libmysqlclient-dev
+sudo pip3 install virtualenv
+(reboot for changes to apply)
 
 B)
 1) Login as root.
@@ -27,7 +29,8 @@ show grants for 'sid16'@'localhost';
 
 C)
 virtualenv myproject
-pip install django mysqlclient (FOR the virtual environment created)
+pip3 install django mysqlclient (FOR the virtual environment created)
+pip3 install djangorestframework channels
 source myproject/bin/activate
 django-admin startproject mysite
 
