@@ -1,8 +1,7 @@
 Project: Setup a Django Project with a MySQL database.
 
 Resrouces:
-For a proper installation guide see:
-https://drive.google.com/open?id=1S4vn8A0G7GxUSduDXQp9WGB5p3Nu9BDV
+For a proper installation guide see GroupF-Deployment-Guide file
 
 https://www.leeboonstra.com/Django/setup-a-django-project-with-a-mysql-database/?fbclid=IwAR1vSS-dcJTDlzV6lUjBjWwZ1eQE8parxwI0zrpTfR3kgDzWQnnJSnoHpgk
 
