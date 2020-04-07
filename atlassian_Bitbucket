@@ -1,0 +1,104 @@
+Bitbucket Cloud is a Git based code hosting and collaboration tool, built for teams. 
+Resource: https://bitbucket.org/product/guides/getting-started/overview?utm_source=engagement-engine&utm_medium=email&utm_campaign=welcome-day-0b_EML-6176#bitbucket-software-hosting-option
+
+Bitbucket's best-in-class Jira and Trello integrations are designed to bring the entire software team together to execute on a project. 
+
+They provide one place for your team to:
+collaborate on code from concept to Cloud, 
+build quality code through automated testing, and 
+deploy code with confidence.
+
+Overview
+
+1) Best-in-class Jira & Trello integration
+Bring structure to chaos and keep the entire software company, from engineering to design, in the loop. 
+Access branches, build status, commits, and status on Jira issues or Trello cards
+
+2) Code collaboration from concept to cloud
+Transition Jira issues based on pull request status, 
+create a merge checklist with designated approvers, and 
+check for passing builds.
+
+3) Build and test automatically with built-in continuous delivery
+Build, test and, deploy with our integrated CI/CD solution, Bitbucket Pipelines. 
+Benefit from configuration as code and fast feedback loops.
+
+4) Deploy with confidence
+Track, preview, and confidently promote your deployments.
+
+5) Secure your code
+Rest easy knowing your code is secure in the Cloud and implement checks to prevent problems before they happen.
+
+Better code with Bitbucket: 4 starting steps  (source: https://bitbucket.org/product/guides/basics/four-starting-steps#step-4-review-code-changes-with-pull-requests)
+Step 1: Put your code in Bitbucket 
+Create a new empty repository
+
+Step 2: Set up locally, collaborate globally
+Clone a Bitbucket repository 
+Make changes to a file in Bitbucket online 
+
+Step 3: Basic branching with Bitbucket
+Create a branch 
+From the CLI, etc.
+
+Step 4: Review code changes with a pull request
+Create a pull request
+Review a pull request 
+Merge a pull request
+
+
+Key terms to know
+Here are some important words and terms to know so you can find your way around Bitbucket. Some of these are terms borrowed from Git, others are specific to Bitbucket.
+Branch
+
+A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.
+Fork
+
+Instead of using a single server-side repository to act as the “central” codebase, forking gives every developer a server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one.
+HEAD
+
+Git’s way of referring to the current snapshot. Internally, the git checkout command simply updates the HEAD to point to either the specified branch or commit. When it points to a branch, Git doesn't complain, but when you check out a commit, it switches into a “detached HEAD” state.
+Master
+
+The default development branch. Whenever you create a git repository, a branch named "master" is created, and becomes the active branch.
+Pipelines
+
+Bitbucket Pipelines is an integrated CI/CD service, built into Bitbucket. It allows you to automatically build, test and even deploy your code, based on a configuration file in your repository. 
+Pipes
+
+Bitbucket Pipes are short code chunks that you can drop into your pipeline to perform powerful actions. Pipes make it easier to build powerful, automated CI/CD workflows and get up and running quickly.
+Project
+
+A project is a container for repositories. Projects make it easier for teams to focus on a goal, product, or process by organizing your repositories into projects. Projects can be either visible or hidden from public view.
+Pull Request
+
+Pull requests are a feature that makes it easier for developers to collaborate using Bitbucket. They provide a user-friendly web interface for discussing proposed changes before integrating them into the official project.
+Working Tree
+
+The tree of actual checked out files, normally containing the contents of the HEAD commit's tree and any local changes you've made but haven't yet committed.
+
+Bitbucket hosting options Features:
+                                    Cloud                         Server                            Datacenter
+Git repository hosting
+Branch permissions
+Jira Software integration
+Projects
+APIs
+3rd party integrations 
+Git Large File Storage (LFS)
+Merge checks
+Enforced merge checks
+Premium
+Built-in CI/CD
+Deployment permissions
+Code search
+Code insights
+Clustering
+Smart Mirroring
+Required two-step verification
+IP Whitelisting
+Snippets
+Issue tracking
+Wiki
+SAML-based SSO: Atlassian Access
+Priority support: Atlassian Access
