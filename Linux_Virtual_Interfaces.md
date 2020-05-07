@@ -56,14 +56,16 @@ on which Apache should listen for incoming named virtual host requests and you
 omit the IP address in the VirtualHost clause:
 
 NameVirtualHost 128.138.243.150
-`<VirtualHost *>
+``` 
+<VirtualHost *>
   ServerName www.company.com
   ServerAdmin webmaster@www.company.com
   DocumentRoot /var/www/htdocs/company
   ErrorLog logs/www.company.com-error_log
   CustomLog logs/www.company.com-access_log combined
   ScriptAlias /cgi-bin/ /var/www/cgi-bin/company
-</VirtualHost>`
+</VirtualHost>
+```
 
 In this configuration, Apache looks in the HTTP headers to determine the re-
 quested site. The server listens for requests for www.company.com on its main IP
