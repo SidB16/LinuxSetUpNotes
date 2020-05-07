@@ -27,13 +27,14 @@ object through five basic components:
 -Directory (optional)
 -Filename (optional)
 
+```
 file      Accesses a local file              file:///etc/syslog.conf
 ftp       Accesses a remote file via FTP     ftp://ftp.admin.com/adduser.tar.gz
 http      Accesses a remote file via HTTP    http://admin.com/index.html
 https     Accesses a remote file via HTTP/SSL  https://admin.com/order.shtml
 ldap      Accesses LDAP directory services    ldap://ldap.bigfoot.com:389/cn=Herb
 mailto    Sends email to a designated address  mailto:linux@book.admin.com
-
+```
 
 How HTTP works?
 HTTP is a stateless client/server protocol. A client asks the server for the “con-
