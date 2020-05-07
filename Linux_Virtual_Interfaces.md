@@ -54,6 +54,7 @@ With name-based virtual hosts, multiple DNS names all point to the same IP ad-
 dress. The Apache configuration is similar, but you specify the primary IP address
 on which Apache should listen for incoming named virtual host requests and you
 omit the IP address in the VirtualHost clause:
+
 NameVirtualHost 128.138.243.150
 <VirtualHost *>
   ServerName www.company.com
@@ -63,6 +64,7 @@ NameVirtualHost 128.138.243.150
   CustomLog logs/www.company.com-access_log combined
   ScriptAlias /cgi-bin/ /var/www/cgi-bin/company
 </VirtualHost>
+
 In this configuration, Apache looks in the HTTP headers to determine the re-
 quested site. The server listens for requests for www.company.com on its main IP
 address, 128.138.243.150.
