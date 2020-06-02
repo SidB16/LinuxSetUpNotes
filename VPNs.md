@@ -68,3 +68,25 @@
 2. VPN software has to be installed and configured on both the server and end-user machine. 
 3. the user, the sys admin in this case has to authendicate before using VPN.
 4. Addtional security challange: Firewalls and IDSs cannot inspect encrypted VPN data. 
+
+## Extra VPN Classifications (IMPORTANT FOR CLOUD :))
+1. Intranet VPN = IPsec and QoS for relaiable throughput = Site-to-Site = allow branch offices to be linked to corporate head-quarters in a secure manner
+2. Extranet VPN = Extends WANs to Business partners = Site-to-Site = allow customers, suppliers, and partners to access corporate intranet in a secure manner
+3. Access VPNs = End-to-Point or End-to-End = Secure, scalable and encrypted tunnels across a public network; client software.
+
+## VPN configurations
+1. Combined SW/HW VPNs- most common forms of VPNs.
+2. deploy a dedicated VPN appliance at the central network and use client software at the remote end of each VPN connection.
+
+## Different Protocol Implementations of VPNs
+### Implementation1: VPN over IPsec
+1. Best solution point-to-point.
+2. Although IPSec can be used for end-to-point and end-to-end architecutre.
+3. More costly and more complex set-up solution as IPsec requires installation of specialized IPsec software/hardware.
+4. Operates at Layer 3. Once user is authendicated he/she gains full acess to private network. 
+
+### Implementation2: VPN over SSL/TLS
+1. Best solution for point-to-end. 
+2. Althought it is used in end-to-end architure.
+3. no hardware software hardware necessary- most browers have SSL/TLS capability built into them.
+
