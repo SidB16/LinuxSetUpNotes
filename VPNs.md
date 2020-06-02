@@ -84,6 +84,7 @@
 2. Although IPSec can be used for end-to-point and end-to-end architecutre.
 3. More costly and more complex set-up solution as IPsec requires installation of specialized IPsec software/hardware.
 4. Operates at Layer 3. Once user is authendicated he/she gains full acess to private network. 
+5. IPsec is not viable when non-IP traffic must be transported.
 
 ### Implementation2: VPN over SSL/TLS
 1. Best solution for point-to-end. 
