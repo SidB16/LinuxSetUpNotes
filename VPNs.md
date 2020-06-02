@@ -1,4 +1,5 @@
 # VPNs?
+![](images/im1.png)
 
 ## Internet/IP Deficiences
 1. Initially, the internet (aka arpanet) was small and relatively private.
