@@ -1,4 +1,4 @@
-# Outlook Mail with Zoom to effectively schdule and manage meetings?
+# Outlook Mail with Zoom to effectively schedule and manage meetings?
 In this doc I list the steps used to configure Zoom for Outlook mail
 
 ## Step1: Install Office 365 for your respective academic institution
