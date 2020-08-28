@@ -1,7 +1,7 @@
 # Outlook Mail with Zoom to effectively schedule and manage meetings?
 In this doc I list the steps used to configure Zoom for Outlook mail
 
-## Step1: Install Office 365 for your respective academic institution
+## Step1: Install Office 365 (for free) from your Academic Institution's IT portal
 At YorkU, we use eecsusername@yorku.ca to sign into https://myaccount.microsoft.com/
 Upon sign-in, install the Office 365 application that imports lisences to local Windows10 OS.
 
