@@ -14,3 +14,6 @@ Partially completed lab for total newcomers: https://angular.io/start
 ## Solidify learning
 Another, less easier, lab: https://angular.io/tutorial \
 In actual development you will typically use the Angular CLI, a powerful command-line tool that lets you generate and modify applications. The lab above is a step-by-step guide with the Angular CLI.
+
+## Quick Guide
+https://docs.angularjs.org/guide/concepts
