@@ -55,6 +55,7 @@ These online apps such as email clients, word processors, spreadsheets, and othe
 ## Source
 https://blog.stackpath.com/web-application/
 https://stackoverflow.com/questions/42735947/difference-between-a-dynamic-web-application-and-a-normal-web-application \
-TODO:https://helpx.adobe.com/dreamweaver/user-guide.html/dreamweaver/using/web-applications.ug.html
+TODO:https://helpx.adobe.com/dreamweaver/user-guide.html/dreamweaver/using/web-applications.ug.html \
+https://www.xperience-group.com/blog/subscription-vs-perpetual/
 
 
