@@ -22,6 +22,12 @@ While in a normal web application or the simple website. There is no request, re
 
 While others are completely ***static***, requiring no server-side processing.
 
+### In other words, 
+A web application is a collection of static and dynamic web pages. A static web page is one that does not change when a site visitor requests it: The web server sends the page to the requesting web browser without modifying it. In contrast, a dynamic web page is modified by the server before it is sent to the requesting browser. The changing nature of the page is why it’s called dynamic.
+
+For example, you could design a page to display fitness results, while leaving certain information (such as employee name and results) to be determined when the page is requested by a particular employee.
+
+## Web server vs Application server
 A web application requires a web server to manage requests from the client, a application sever to perfrom the requested task, and sometimes, a database to store information. 
 
 Application sever technologies range from ASP.NET, ASP and ColdFusion, to PHP and JSP.
