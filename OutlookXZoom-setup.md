@@ -9,7 +9,7 @@ Upon sign-in, install the Office 365 application that imports lisences to local 
 In your eecsusername@my.yorku.ca gmail acccount --> "settings Cog symbol" located top right --> select "Forwarding and POP/IMAP" tab --> scroll down IMAP access, and select enable IMAP option.
 
 ## Step3: Configure Outlook to host email from eecsusername@my.yorku.ca gmail mailbox
-Open the Outlook application, then select "configure account manually". \ 
+Open the Outlook application, then select "configure account manually". \
 Thereafter, enter:\
 email: eecsusername@my.yorku.ca\
 user:eecsusername\
