@@ -83,6 +83,8 @@ Web applications give businesses the ability to streamline their operations, inc
 
 These online apps such as email clients, word processors, spreadsheets, and other programs provide the same functionality as the desktop versions. However, they have an added advantage of working across multiple platforms, having a broader reach, and being easily accessible from anywhere.
 
+## Terminology
+https://helpx.adobe.com/dreamweaver/user-guide.html/dreamweaver/using/web-applications.ug.html
 
 ## Source
 https://blog.stackpath.com/web-application/
