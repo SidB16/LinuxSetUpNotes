@@ -22,13 +22,39 @@ While in a normal web application or the simple website. There is no request, re
 
 While others are completely ***static***, requiring no server-side processing.
 
-### In other words, 
+### In other words, (Another definition) 
 A web application is a collection of static and dynamic web pages. A static web page is one that does not change when a site visitor requests it: The web server sends the page to the requesting web browser without modifying it. In contrast, a dynamic web page is modified by the server before it is sent to the requesting browser. The changing nature of the page is why it’s called dynamic.
 
 For example, you could design a page to display fitness results, while leaving certain information (such as employee name and results) to be determined when the page is requested by a particular employee.
 
+### Note:
+Strictly speaking, a “static” page may not be static at all. For example, a rollover image or Flash content (a SWF file) can ***make a static page come alive***. However, this documentation refers to a page as static if it is sent to the browser without modifications. 
+
+Recall also, ***a page request is generated*** when a visitor clicks a link on a web page, selects a bookmark in a browser, or enters a URL in a browser’s address text box. 
+
+## Static web page
+![](images/im4.png)
+
+In the case of web applications, certain lines of code are undetermined when the visitor requests the page. These lines must be determined by some mechanism before the page can be sent to the browser. The mechanism is discussed in the following section.
+
+
+## Process dynamic web page
+When a web server receives a request for a static web page, the server sends the page directly to the requesting browser. When the web server receives a request for a dynamic page, however, it reacts differently: It passes the page to a special piece of software responsible for finishing the page. This special software is called an application server.
+
+The application server reads the code on the page, finishes the page according to the instructions in the code, and then removes the code from the page. The result is a static page that the application server passes back to the web server, which then sends the page to the requesting browser. All the browser gets when the page arrives is pure HTML. Here’s a view of the process:
+![](images/im5.png)
+
+
+## Using a database? 
+Using a database to store content allows you to separate your website’s design from the content you want to display to site users. 
+Instead of writing individual HTML files for every page, you only need to write a page—or template—for the different kinds of information you want to present. 
+You can then upload content into a database and then have the website retrieve that content in response to a user request. 
+
 ## Web server vs Application server
 A web application requires a web server to manage requests from the client, a application sever to perfrom the requested task, and sometimes, a database to store information. 
+
+A web server is software that serves web pages in response to requests from web browsers. 
+A page request is generated when a visitor clicks a link on a web page, selects a bookmark in a browser, or enters a URL in a browser’s address text box. 
 
 Application sever technologies range from ASP.NET, ASP and ColdFusion, to PHP and JSP.
 ![](images/im3.png)
