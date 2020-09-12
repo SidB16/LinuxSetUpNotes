@@ -6,7 +6,7 @@ Quick read through. \
 https://angular.io/guide/architecture
 
 ## Getting hands dirty
-Partially completed app for total newcomers: https://angular.io/start
+Partially completed lab for total newcomers: https://angular.io/start
 
 ## Solidify learning
-https://angular.io/tutorial
+Another, less easier, lab: https://angular.io/tutorial
