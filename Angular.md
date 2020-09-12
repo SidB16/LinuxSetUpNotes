@@ -5,6 +5,9 @@ Could use Udemy, or study it myself :P
 Quick read through. \
 https://angular.io/guide/architecture
 
+## Setting up local development environment
+https://angular.io/guide/setup-local
+
 ## Getting hands dirty
 Partially completed lab for total newcomers: https://angular.io/start
 
