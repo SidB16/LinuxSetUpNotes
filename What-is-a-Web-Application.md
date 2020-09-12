@@ -9,25 +9,25 @@ and have the means for ***processing*** this information and ***presenting*** th
 
 ## How a web application works?
 Web applications use a ***combination*** of server-side scripts (PHP and ASP), and client-side scripts (Javascript and HTML). \
-***Server-side scripts to handle the storage and retrivel of information.*** \
+***Server-side scripts to handle the storage and retrivel of information.*** 
 ***Client-side scripts to present infromation to users.*** 
 
 Web applications are usually coded in browser-suppourted languages, like HTML and Javascript. 
-These languages ***rely on the browser to render the program executable.*** \
+These languages ***rely on the browser to render the program executable.*** 
 
 Some applications are ***dynamic***, requiring server-side processing (generating dynamic content to provide the specialized functionality offered by a business, service, or application).
 The way such dynamic web apps are displayed on a user’s screen is not predetermined but rather dynamically shaped by app logic that is implemented on the server side or the client side of the app.
 
 While in a normal web application or the simple website. There is no request, response scenario. All and all it's just a client end with some HTML with some CSS or maybe Javascript or any other extension of Javascript. No server end.
 
-While others are completely ***static***, requiring no server-side processing.\
+While others are completely ***static***, requiring no server-side processing.
 
-A web application requires a web server to manage requests from the client, a application sever to perfrom the requested task, and sometimes, a database to store information. \
+A web application requires a web server to manage requests from the client, a application sever to perfrom the requested task, and sometimes, a database to store information. 
 
 Application sever technologies range from ASP.NET, ASP and ColdFusion, to PHP and JSP.
-![](images/im3png)\
+![](images/im3png)
 
-Here's what a typical web application flow looks like: \
+Here's what a typical web application flow looks like: 
 1. User triggers a request to the web server over the Internet, either through a web browser or the application’s user interface
 2. Web server forwards this request to the appropriate web application server
 3. Web application server performs the requested task – such as querying the database or processing the data – then generates the results of the requested data
@@ -46,8 +46,8 @@ Popular applications include Google Apps and Microsoft 365.
 - They reduce cost for both the business aIncreased Internet usage among companies and individuals has influenced the way businesses are run. This has led to the widespread adoption of web applications as companies shift from traditional models to cloud-based and grid models. Web applications give businesses the ability to streamline their operations, increase efficiency, and reduce costs.nd end-user, as there is less support and maintenance required by the business and lower requirements for the end-user's computer.
 
 ## End Remarks
-Increased Internet usage among companies and individuals has influenced the way businesses are run. This has led to the widespread adoption of web applications as companies shift from traditional models to cloud-based and grid models. \
-Web applications give businesses the ability to streamline their operations, increase efficiency, and reduce costs. \
+Increased Internet usage among companies and individuals has influenced the way businesses are run. This has led to the widespread adoption of web applications as companies shift from traditional models to cloud-based and grid models.\
+Web applications give businesses the ability to streamline their operations, increase efficiency, and reduce costs. 
 
 These online apps such as email clients, word processors, spreadsheets, and other programs provide the same functionality as the desktop versions. However, they have an added advantage of working across multiple platforms, having a broader reach, and being easily accessible from anywhere.
 
