@@ -10,6 +10,8 @@ It's almost impossible to measure "used memory" accurately on a modern operating
 
 ## Homebrew Package manager 
 
+## Making bash default shell + updating $PATH to run apps from CLI
+
 ## Window manipulator of WindowServer
 https://www.spectacleapp.com/
 
