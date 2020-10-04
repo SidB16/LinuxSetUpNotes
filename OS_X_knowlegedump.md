@@ -8,7 +8,7 @@ Monitor Memory pressure in Activity Monitor to observe availibity of memory reso
 It's almost impossible to measure "used memory" accurately on a modern operating system. There's just too much compression / caching / eviction / ... going on. \
 “Activity Monitor” and htop simply use a different estimate. This isn’t worrying, and the amount of used memory in your case—5GB—is pretty normal considering you have 8GB of memory installed.
 
-## Brew Package manager 
+## Homebrew Package manager 
 
 ## Window manipulator of WindowServer
 https://www.spectacleapp.com/
