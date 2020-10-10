@@ -1,5 +1,9 @@
 # A Collection of Useful articles on studying OS X
 
+# About the OS
+Catalina requires 4 GB of memory, an increase over the 2 GB required by Lion through Mojave.
+Source:https://en.wikipedia.org/wiki/MacOS_Catalina#Changes
+
 ## High ram usage when idle? 
 Googled: "macos using 4gb of ram idle" \
 https://superuser.com/questions/885586/mac-os-x-using-over-4-gb-of-memory-with-nothing-running \
