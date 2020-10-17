@@ -3,6 +3,7 @@ Literally just turned on github-pages hosting in ENG4000 repo, after creating si
 Played with Ruby afterwards to learn XD 
 
 Info on theme:\
+Themes can be picked when deploying through settings. \
 http://jekyllthemes.org/themes/cayman-theme/ \
 https://jasonlong.github.io/cayman-theme/ 
 
