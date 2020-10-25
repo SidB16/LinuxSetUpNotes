@@ -4,7 +4,7 @@ Motivated by 3481 project. Course involves Assignment-[How to Solve and Write Up
 Strategy for course assignments: getting starte, carrying out the work, checking your work, and writing up and proofreading your solution.
 * Start early! Read over each problem on the day it is handed out so that you can ask questions about the assginemnt during the next class.
 * Before handing in your solution, read, check, revise and proof read your work.
-* Use good writing technique (active voice, avoid wesel words, etc).
+* Use good writing technique (use active voice, avoid wesel words, etc).
 
 ### Pre-study
 [Elementary Number Theory](https://www.di-mgt.com.au/number_theory.html)
