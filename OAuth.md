@@ -20,10 +20,26 @@ Building an OAuth Service using Python- Flask, Postgres, and JWT.
 
 In this lab, we use the OAuth service (open-source) as way to authendicate a principle, and verify authorization of that principle- making a call to an API, or to another microservice with in the system. 
 
-###### Installing docker to deploy in a VM 
+###### Installing docker to deploy in a VM  (ISSUE)
+
 The official docker website documentation is hot trash- idc about adding their official repo. Installation guide: (can use apt or snap)
 https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver
 
+###### BUT I was wrong!
+"The first mistake is to think that a Docker image/container is similar to a virtual machine. There are resemblances but they aren't the same and frankly, not really similar."
+
+Docker is not, really, for running an OS. It is for running a single process in a contained (isolated) environment. The container uses the same kernel as what is on the host.
+
+When you create a Docker image with FROM ubuntu you are starting your image with some pre-created layers that brings in some parts of a standard file system and packages you would find on a Ubuntu server.
+
+Then you add your own additional layers, adding binaries and files that are necessary to run your program / process.
+Source:  https://serverfault.com/questions/986848/is-it-possible-to-run-ubuntu-server-on-docker
+
+###### Using Virtual Box instead
+* Install VirtualBox.2.Create a virtual machine that would host Linux Ubuntu.
+* You may refer toOSBOXES website and download the Ubuntu64-bit VDI imageat https://www.osboxes.org/ubuntu/; 
+* for this lab Ubuntu 19.10 Eoan Ermine version is recommended: https://sourceforge.net/projects/osboxes/files/v/vb/55-U-u/19.04/19.0464.7z/download3.
+* Unzip the file and fulfill the installation processoLogin Password: osboxes.orgoEscalateto root using: sudo su
 
 
 ######  Postgres DB Setup
