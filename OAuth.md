@@ -20,6 +20,9 @@ Building an OAuth Service using Python- Flask, Postgres, and JWT.
 
 In this lab, we use the OAuth service (open-source) as way to authendicate a principle, and verify authorization of that principle- making a call to an API, or to another microservice with in the system. 
 
+######  Postgres DB Setup
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04
+
 
 # Reference
 * https://www.grizzlypeaksoftware.com/articles?id=5SCpQMgookgKNtupzNHg9K
