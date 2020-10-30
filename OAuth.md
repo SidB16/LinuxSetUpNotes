@@ -23,3 +23,5 @@ In this lab, we use the OAuth service (open-source) as way to authendicate a pri
 
 # Reference
 * https://www.grizzlypeaksoftware.com/articles?id=5SCpQMgookgKNtupzNHg9K
+* https://oauth.net/
+
