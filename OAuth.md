@@ -27,4 +27,4 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgres
 # Reference
 * https://www.grizzlypeaksoftware.com/articles?id=5SCpQMgookgKNtupzNHg9K
 * https://oauth.net/
-
+* https://help.bizagi.com/bpm-suite/en/index.html?cloud_auth_oauth.htm
