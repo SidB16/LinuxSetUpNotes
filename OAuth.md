@@ -45,15 +45,20 @@ Source:  https://serverfault.com/questions/986848/is-it-possible-to-run-ubuntu-s
 ######  Postgres DB Setup
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04
 
+Commands
+
+* Check service status on your system using ==> service --status-all
+* The installation procedure created a user account called postgres that is associated with the default Postgres role. In order to use Postgres, you can log into that account from cli. ==> sudo -i -u postgres 
+* ***or***
 * running the single command psql as the postgres user with sudo ==> sudo -u postgres psql
-* create a new user, without switching from your normal account ==> sudo -u postgres createuser --interactive
-* access a Postgres prompt immediately by typing ==> psql
-* exit Postgres prompt immediately ==> postgres=# \q
-* create new roles from the command line with the createrole command ==> sudo -u postgres createuser --interactive
-* Postgres authentication system makes by default is that for any ***role*** used to log in, that role will have a database with the same name which it can access ==> sudo -u postgres createdb whoami
-* To log in with ident based authentication, you’ll need a Linux user with the same name as your Postgres role and database. Thus the reason for ==> sudo -u postgres createdb whoami
+* create a new user, without switching from your normal account ==> sudo -u postgres createuser --interactive (need a role for non-root linux user to access db from cli using psql -d dbname) 
+* create db ==> sudo -u postgres createdb whoami 
+* If you want your user to connect to a different database, you can do so by specifying the database like this ==> psql -d exsisting-db-name
+* sql commands: \l, \q, \du.
+* Using sudo -u postgres: droprole, dropdb. 
 
 Some things to keep in mind with Postgres:
+
 * By default, Postgres uses a concept called “roles” to handle in authentication and authorization. These are, in some ways, similar to regular Unix-style accounts, but Postgres does not distinguish between users and groups and instead prefers the more flexible term “role”.
 * Postgres is set up to use ident authentication, meaning that it associates Postgres roles with a matching Unix/Linux system account. If a role exists within Postgres, a Unix/Linux username with the same name is able to sign in as that role.
 * Another assumption that the Postgres authentication system makes by default is that for any role used to log in, that role will have a database with the same name which it can access. ==> createdb whoami!
