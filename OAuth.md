@@ -14,7 +14,7 @@ OAuth Backgtound:
   * Then the API again communicates with the same OAuth server to verify if the (now authendicated) user has the authorization to make to complete the request made in the orignial API call.      
 * This way of centralizing of user-credntials provides a fast (development-time), easy (credentials managment) and secure (reduces application attack vectors) way of authendicating a user and then checking if the authedicated user has the authorization to complete an authendication request.   
 
-### Getting hands dirty
+### Getting hands dirty (:hammer: :hammer:)
 
 Building an OAuth Service using Python- Flask, Postgres, and JWT.
 
@@ -22,7 +22,7 @@ In this lab, we use the OAuth service (open-source) as way to authendicate a pri
 
 ###### Installing docker to deploy in a VM  (ISSUE)
 
-The official docker website documentation is hot trash- idc about adding their official repo. Installation guide: (can use apt or snap)
+The official docker website documentation is okay- idc about adding their official repo. Installation guide: (can use apt or snap)
 https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver
 
 ###### BUT I was wrong!
@@ -44,6 +44,27 @@ Source:  https://serverfault.com/questions/986848/is-it-possible-to-run-ubuntu-s
 
 ######  Postgres DB Setup
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04
+
+* running the single command psql as the postgres user with sudo ==> sudo -u postgres psql
+* create a new user, without switching from your normal account ==> sudo -u postgres createuser --interactive
+* access a Postgres prompt immediately by typing ==> psql
+* exit Postgres prompt immediately ==> postgres=# \q
+* create new roles from the command line with the createrole command ==> sudo -u postgres createuser --interactive
+* Postgres authentication system makes by default is that for any ***role*** used to log in, that role will have a database with the same name which it can access ==> sudo -u postgres createdb whoami
+* To log in with ident based authentication, you’ll need a Linux user with the same name as your Postgres role and database. Thus the reason for ==> sudo -u postgres createdb whoami
+
+Some things to keep in mind with Postgres:
+* By default, Postgres uses a concept called “roles” to handle in authentication and authorization. These are, in some ways, similar to regular Unix-style accounts, but Postgres does not distinguish between users and groups and instead prefers the more flexible term “role”.
+* Postgres is set up to use ident authentication, meaning that it associates Postgres roles with a matching Unix/Linux system account. If a role exists within Postgres, a Unix/Linux username with the same name is able to sign in as that role.
+* Another assumption that the Postgres authentication system makes by default is that for any role used to log in, that role will have a database with the same name which it can access. ==> createdb whoami!
+* To log in with ident based authentication, you’ll need a Linux user with the same name as your Postgres role and database.
+* If you don’t have a matching Linux user available, you can create one with the adduser command. 
+* If you want your user to connect to a different database, you can do so by specifying the database like this ==> psql -d postgres.
+* Connect to your db using ==> sudo psql -d whoami (TBD)
+* You can see your new table by typing==> sammy=# \d
+* If you want to see just the table without the sequence, you can type==> sammy=# \dt 
+* Retrieve the information you’ve added by typing==> sammy=#SELECT * FROM playground;
+
 
 
 # Reference
