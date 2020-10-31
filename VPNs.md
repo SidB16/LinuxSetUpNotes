@@ -27,7 +27,7 @@
 ## VPN Into: Why do we need VPNs?
 1. Private Network: network that is owned, managed and secured by one particular entity/organization. 
 * When a network is composed of multiple segments, the segments are connected via a dedicated 'owned' or 'leased' (physical) lines.
-2. Virtual Private: a secure network constructed by using public wries(the Internet) to connect it's different private-network segments.
+2. Virtual Private: a secure network constructed by using public wries (the Internet) to connect it's different private-network segments.
 * 'virtual tunnles' between private network segments can be created using various types of encryption protocols(IPsec, SSL)
 3. In VPNs, security is ensured (more) by means of software than hardware.
 
@@ -49,26 +49,26 @@
 3. problematic low-bandwitdth links
 * encrypted traffic doe not compress as well (think of wireless).
 4. VPN end-points= additional vulnerability.
-* company's network adminitrators little to no control over remote devices.
+* company's network administrators little to no control over remote devices.
 
 ## Different VPN Uses/Architectures
 ### Architecture1: Site-to-Site or Point-to-Point or Gateway-to-Gateway
 1. Connecting two secure LANs
-2. a single virtual tunnel between the routers/gateways can suppourt all commuinications between two networks.
-3. Site-to-Site VPNs are often transparent to users who DO NOT NEED to perform sperate authendication to use VPN.
+2. a single virtual tunnel between the routers/gateways can suppourt all communications between two networks.
+3. Site-to-Site VPNs are often transparent to users who DO NOT NEED to perform sperate authentication to use VPN.
 * No need for VPN client software to be installed. 
 
 ### Architecture2:End-to-Point or Host-to-Gateway
-1. Typically used to connect remote employess(residing on non-secure networks) to corporate LAN over the internet.
+1. Typically used to connect remote employess (residing on non-secure networks) to corporate LAN over the internet.
 2. The remote user's host/computer has to be configured to act as a VPN client.
 * VPN client must be installed and configured.
-3. User has to authendicate before using the VPN (a virtual tunnel between remote user and VPN gateway will be created over the internet).
+3. User has to authenticate before using the VPN (a virtual tunnel between remote user and VPN gateway will be created over the internet).
 
 ### Architecture3: End-to-End or Host-to-Host
 1. typically for special purpose needs, such as sys admin performing remote management on a signle server. 
 2. VPN software has to be installed and configured on both the server and end-user machine. 
 3. the user, the sys admin in this case has to authendicate before using VPN.
-4. Addtional security challange: Firewalls and IDSs cannot inspect encrypted VPN data. 
+4. Additional security challenge: Firewalls and IDSs cannot inspect encrypted VPN data. 
 
 ## Extra VPN Classifications (IMPORTANT FOR CLOUD :))
 1. Intranet VPN = IPsec and QoS for relaiable throughput = Site-to-Site = allow branch offices to be linked to corporate head-quarters in a secure manner
@@ -84,11 +84,11 @@
 1. Best solution point-to-point.
 2. Although IPSec can be used for end-to-point and end-to-end architecutre.
 3. More costly and more complex set-up solution as IPsec requires installation of specialized IPsec software/hardware.
-4. Operates at Layer 3. Once user is authendicated he/she gains full acess to private network. 
+4. Operates at Layer 3. Once user is authenticated he/she gains full acess to private network. 
 5. IPsec is not viable when non-IP traffic must be transported.
 
 ### Implementation2: VPN over SSL/TLS
 1. Best solution for point-to-end. 
 2. Althought it is used in end-to-end architure.
-3. no hardware software hardware necessary- most browers have SSL/TLS capability built into them.
+3. no hardware software hardware necessary- most browsers have SSL/TLS capability built into them.
 ![](images/im2.png)
