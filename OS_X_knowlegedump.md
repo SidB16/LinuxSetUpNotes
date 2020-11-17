@@ -8,7 +8,7 @@ Source:https://en.wikipedia.org/wiki/MacOS_Catalina#Changes
 Googled: "macos using 4gb of ram idle" \
 https://superuser.com/questions/885586/mac-os-x-using-over-4-gb-of-memory-with-nothing-running \
 Unused RAM is wasted RAM! \
-Monitor Memory pressure in Activity Monitor to observe availibity of memory resources. \
+Monitor Memory pressure in Activity Monitor to observe availability of memory resources. \
 It's almost impossible to measure "used memory" accurately on a modern operating system. There's just too much compression / caching / eviction / ... going on. \
 “Activity Monitor” and htop simply use a different estimate. This isn’t worrying, and the amount of used memory in your case—5GB—is pretty normal considering you have 8GB of memory installed.
 
