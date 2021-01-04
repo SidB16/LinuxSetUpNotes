@@ -93,3 +93,97 @@ TODO:https://helpx.adobe.com/dreamweaver/user-guide.html/dreamweaver/using/web-a
 https://www.xperience-group.com/blog/subscription-vs-perpetual/
 
 
+## Extra from Java for WebDev Book
+https://github.com/SidB16/4413/tree/master/Java-for-Web-Development
+
+Index
+* In Chapter 2, you will replace this stand-alone Java application with a web layer using the web tier components of Java EE (specifically, servlets and JSPs). 
+* You will use this data access layer throughout this book, and from Chapter 4 onward you will build a web application repeatedly by rebuilding the web layer using different web frameworks 
+
+Theory
+* ***Multitired architecture model*** --> General: Web Layer (presentation tier) then Application Layer (Logic tier) then Database layer (data tier) --> JEE  --> JEE Specific mutitier model:Client Tier then Web Tier then Service Tier then *EIS Tier.
+* Sun developed JVM for each OS -> plain text files with .java extensions are compiled into bytecode instructions called .class files, using javac --> .class files are bytecode instructions that get read by JVM --> they get translated into machine-language operations that computer executes.
+
+Detailed Descriptions
+* The enterprise information system (EIS) tier, in J2EE architecture, handles enterprise information system software, which provides an enterprise’s critical business information infrastructure.
+* A Java application is a computer program that executes when you use the java command to
+launch the JVM. In the Java programming language, all source code is first written in plain-text
+files (in Notepad, for instance, or in any text editor) with the .java extension. The source files are
+compiled by the javac compiler into .class files that contain bytecode instructions. The JVM reads
+these bytecode instructions and translates them into the machine-language operations that each
+computer executes
+
+In this chapter, you will take the first step by building a traditional stand-alone Java bookstore application. In Chapter 2, you will transform the stand-alone application into a web application. 
+
+![](images/im6.png)
+
+![](images/im7.png)
+
+* A Java enterprise application can be defined as a Java application that
+utilizes the enterprise services offered by Java EE. 
+* In fact, a web application can be classified as
+an enterprise application if it utilizes Java EE services in the form of components packed in the
+web tier.
+
+* Java EE isolates these services functionally into separate tiers, as ias illustrated in Figure 1-3,
+by providing an application model on which the Java enterprise applications should be built. As a
+consequence, the Java enterprise application mirrors the multitier architecture of Java EE. Figure 1-4
+illustrates a generalized view of the layers of a typical web application.
+
+![](images/im8.png)
+
+* Each layer in Figure 1-4 is an area of concern, for the application. For instance, the web layer deals
+only with employing the web tier components of Java EE. 
+* Having different layers in an application results in what is called a separation of concerns. 
+* In terms of implementation, this separation of concerns is achieved using coarse-grained interfaces i.e. different views.
+
+#### If not Seperation of Concern?
+* The concern is the feature, functionality or business functions with which the application’s developer needs to be concerned.
+* Crosscutting such concerns is inherent in complex systems and leads to code scattering, which is when code for one concern spans many modules, and code tangling, which is when code in one module concentrates on addressing multiple concerns.
+* Code scattering and code tangling lead to a lack of clarity, redundancy, rigidity, and continuous
+refactoring.
+
+![](images/im9.png)
+
+Figure 1-5 illustrates how the system services of logging, transaction, and security
+crosscut the business functions of the application.
+* Exaplination: BookService in Figure 1-5 is too involved with the system services. Each object knows and is
+responsible for logging, security, and transaction. A method, for example, to purchase a book in
+BookService should be concerned only with how to purchase the book and not with whether it is secure or transactional.
+
+#### WWeb Layer
+The web layer of a web application consists of the web tier components of Java EE such as servlets
+and JSP. The web layer can access the service layer, but there should not be a tight coupling
+between the web layer and the service layer. That is, changing the service layer should not impact
+the web layer.hy Seperation of Concern then?
+Separation of concerns, one of the main goals of software engineering, lets you handle each service on its own and thereby does the following:
+* Promotes traceability within and across the artifacts in the system, throughout
+the life cycle of the system
+* Controls the impact caused by the change, thereby providing scope for
+evolution and noninvasive adaptation
+* Promotes development of cohesive units, thereby facilitating reuse
+
+#### Coming Back to this
+![](images/im8.png)
+
+###### Web Layer
+The web layer of a web application consists of the web tier components of Java EE such as servlets
+and JSP. The web layer can access the service layer, but there should not be a tight coupling
+between the web layer and the service layer. That is, changing the service layer should not impact
+the web layer.
+
+###### Service Layer
+The service layer consists of the business tier components of Java EE such as Enterprise JavaBeans
+(EJBs). The service layer can access the data access layer, but there should be no tight coupling
+between the service layer and the data access layer. In fact, the service layer should not know
+anything about the web or data access layer. The service layer provides a coarse-grained interface
+for the web layer.
+
+###### Data Access Layer
+The data access layer consists of the data tier components of Java EE such as JDBC and JPA. This
+layer should not contain any business logic. This layer abstracts the actual persistence mechanism
+(in other words, JDBC or JPA) from the service layer by providing the coarse-grained interface to the
+service layer.
+
+***Note***: The call flow in this architecture is always from the top layer to the bottom layer. In other words, the
+service layer should be able to call the data access layer but not vice versa.
