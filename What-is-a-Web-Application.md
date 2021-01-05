@@ -187,3 +187,5 @@ service layer.
 
 ***Note***: The call flow in this architecture is always from the top layer to the bottom layer. In other words, the
 service layer should be able to call the data access layer but not vice versa.
+
+![](images/mydiagramofJavaWebApp.png)
