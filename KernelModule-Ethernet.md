@@ -9,7 +9,8 @@
 1. rmmod e10001 (unload)
 2. Check that OS identifies a driver that can be used as a module
 3. modprobe e1000e (load the initially unloaded kernel module)
-* Source: https://www.tecmint.com/load-and-unload-kernel-modules-in-linux/
+* Source: https://www.tecmint.com/load-and-unload-kernel-modules-in-linux/ and https://opensource.com/article/18/5/how-load-or-unload-linux-kernel-module
+
 
 
 ## OS level
