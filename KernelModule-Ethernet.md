@@ -12,3 +12,5 @@
 * sudo iptables -F
 * Source: https://askubuntu.com/questions/54710/how-do-i-reset-the-network-adapter-using-a-terminal-command
 
+## Also...
+Disable MS Teams auto-startup.
