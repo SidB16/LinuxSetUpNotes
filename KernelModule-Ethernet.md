@@ -10,6 +10,8 @@
 
 ## OS level
 * sudo iptables -F
+* Source: https://askubuntu.com/questions/491729/how-to-completely-reset-ubuntu-networking-settings
+* new dhcp lease (that's the technical name for obtain a new IP from the router), you just need to use: sudo dhclient -v eth1 (used lshw -C to identify logical name)
 * Source: https://askubuntu.com/questions/54710/how-do-i-reset-the-network-adapter-using-a-terminal-command
 
 ## Also...
