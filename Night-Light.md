@@ -12,6 +12,7 @@
 a) create .config/redshift.conf
 b) redshift-gtk will use this conf file to keep temp to 3000
 c) paste into conf file
+```
 ; Global settings for redshift
 [redshift]
 ; Set the day and night screen temperatures
@@ -22,5 +23,5 @@ location-provider=manual
 [manual]
 lat=43.6532
 lon=79.3832
-
+```
 5) Trust software reliability XD
