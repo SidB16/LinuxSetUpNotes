@@ -21,3 +21,6 @@ https://www.spectacleapp.com/
 
 ## "if your Mac is being strange, just give it the full on kick in the pants, don’t go half way"
 https://thenextweb.com/lifehacks/2017/06/14/how-when-why-to-reset-the-pram-smc-on-your-mac/
+
+## Add Vscode 'code' as shell command to PATH
+F1 --> 'Shell Command: Install code command in PATH'
