@@ -24,3 +24,7 @@ https://thenextweb.com/lifehacks/2017/06/14/how-when-why-to-reset-the-pram-smc-o
 
 ## Add Vscode 'code' as shell command to PATH
 F1 --> 'Shell Command: Install code command in PATH'
+
+## Latex on MacOS
+* Requires TexLive engine, available through MacTex- 7gb file. The engine is embedded within.
+* Use VS code latex workshop extension for compile and build.
