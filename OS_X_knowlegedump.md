@@ -28,3 +28,7 @@ F1 --> 'Shell Command: Install code command in PATH'
 ## Latex on MacOS
 * Requires TexLive engine, available through MacTex- 7gb file. The engine is embedded within.
 * Use VS code latex workshop extension for compile and build.
+
+
+## Article on setting up MacOS after using Linux
+https://hookrace.net/blog/macos-setup/
